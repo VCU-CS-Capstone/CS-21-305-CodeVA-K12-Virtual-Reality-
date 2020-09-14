@@ -23,3 +23,14 @@
 - Created a basic pool table model in unity to practice movement and materials
 ### Issues
 - N/A
+
+## Week Three
+
+### Tasks
+- practice more unity
+- Come up with 2 easy, 2 medium, and 1 spicy idea for VR
+### Accomplishments
+- Created pool ball in blender 
+- Came up with 2 easy ideas for VR
+### Issues
+- N/A
