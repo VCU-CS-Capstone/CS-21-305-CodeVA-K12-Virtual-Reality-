@@ -30,3 +30,18 @@
 - Picked Unity as the main engine we will work with.
 ### Issues
 - Found an issue with Android deployment. Have to figure out a way around that or a fix for it soon. At the moment the solution is just to deploy on Mac in longer time intervals.
+
+## Week Three
+
+### Tasks
+- Come up with other 3 ideas for Mr. Shank
+- Figure out Android Deployment issue.
+- Create Deliverable for EduSource and Mr. Shank
+### Accomplishments
+- Got a little bit closer to figuring out the issue with Android Deployment.
+- Met with Mr. Shank to begin Second Sprint and talk about actual design.
+- Came up with two ideas out of 5 to come up with.
+- Created a donut in blender
+- Imported the donut into unity
+### Issues
+- N/A
