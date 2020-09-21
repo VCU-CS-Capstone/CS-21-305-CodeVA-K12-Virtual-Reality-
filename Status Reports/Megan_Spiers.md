@@ -34,3 +34,15 @@
 - Came up with 2 easy ideas for VR
 ### Issues
 - N/A
+
+## Week Four
+
+### Tasks
+- explore with unity
+- Look into limitations of google cardboard 
+- Pick our projects to work on
+### Accomplishments
+- Continued to learn unity/blender 
+- Came up with 5 ideas for VR
+### Issues
+- N/A
