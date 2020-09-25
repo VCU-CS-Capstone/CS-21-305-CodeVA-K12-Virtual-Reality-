@@ -45,3 +45,15 @@
 - Imported the donut into unity
 ### Issues
 - N/A
+
+## Week Four
+
+### Tasks
+- Narrowing down what projects we will be working on
+- Figuring out the physical limitations of the google cardboard platform.
+### Accomplishments
+- Got the android issue solved
+- Met with Mr. Shank about our Ideas
+- Came up with 5 different ideas for projects
+### Issues
+- N/A
