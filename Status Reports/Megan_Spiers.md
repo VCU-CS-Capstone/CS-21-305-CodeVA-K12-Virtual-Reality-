@@ -46,3 +46,13 @@
 - Came up with 5 ideas for VR
 ### Issues
 - N/A
+
+## Week Five
+
+### Tasks
+- implement test project and learn about importing textures
+- gather facts for planet project
+### Accomplishments
+- Decided to work on solar system project first
+### Issues
+- N/A
