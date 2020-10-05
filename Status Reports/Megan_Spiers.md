@@ -56,3 +56,14 @@
 - Decided to work on solar system project first
 ### Issues
 - N/A
+
+## Week Six
+
+### Tasks
+- Finish Scene Transition in Cardboard
+- Begin work on a main screen UI
+### Accomplishments
+- began work on first VR project (solar system)
+- Worked with scene transitions and tried to relate to cardboard
+### Issues
+- N/A
