@@ -67,3 +67,15 @@
 - Worked with scene transitions and tried to relate to cardboard
 ### Issues
 - N/A
+
+## Week Seven
+
+### Tasks
+- Get unity to play the fade out and fade in animations
+- Think about how our facts and information about planets can be laid on in UI form and what buttons are needed
+### Accomplishments
+- Created a sample scene off the main google cardboard room to transtion to
+- Created fade in/fade out animations for use with scene transition
+- Sucessfully got unity to switch scenes and play fade in animation when a button on a UI is pressed
+### Issues
+- Unity only plays the fade in animation and not the fade out animation so scene transtion is still more jarring than desired
