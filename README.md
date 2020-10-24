@@ -8,13 +8,12 @@ To address the issue of broadening participation in computer science, computer s
 | Documentation |  all documentation the project team has created to describe the architecture, design, installation and configuratin of the peoject |
 | Notes and Research | Relavent information useful to understand the tools and techniques used in the project |
 | Status Reports | Project management documentation - weekly reports, milestones, etc. |
-| scr | Source code - create as many subdirectories as needed |
+| src | Source code - create as many subdirectories as needed |
 
 ## Project Team
 - *Perry Shank*  - *CodeVA* - Mentor
 - *Technical Advisor Name* - *Company Affliation* - Technical Advisor
 - *Caroline Budwell* - *Computer Science* - Faculty Advisor
-- *Alex Betancourt* - *Computer Science* - Student Team Member
 - *Jacob Chandler* - *Computer Science* - Student Team Member
 - *Megan Spiers* - *Computer Science* - Student Team Member
 - *Jackson Hambridge* - *Computer Science* - Student Team Member
