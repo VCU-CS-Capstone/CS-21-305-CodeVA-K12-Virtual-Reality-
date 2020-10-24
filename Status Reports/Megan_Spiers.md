@@ -1,6 +1,6 @@
 # Weekly status reports
 
-## Week one
+## Week One
 
 ### Tasks
 - Integrate cardboard into unity/unreal (whichever we decide on)
@@ -79,3 +79,14 @@
 - Sucessfully got unity to switch scenes and play fade in animation when a button on a UI is pressed
 ### Issues
 - Unity only plays the fade in animation and not the fade out animation so scene transtion is still more jarring than desired
+
+## Week Eight
+
+### Tasks
+- Update UI to respond to hover and be more user friendly
+- Research about UI's in Unity
+### Accomplishments
+- Fixed Animation Issue
+- Set up scene transition main menu screen and space scene
+### Issues
+- N/A
