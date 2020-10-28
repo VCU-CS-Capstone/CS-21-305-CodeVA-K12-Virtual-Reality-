@@ -90,3 +90,16 @@
 - Set up scene transition main menu screen and space scene
 ### Issues
 - N/A
+
+## Week Nine
+
+### Tasks
+- Get a reticle / gaze timer working
+- Set up proper transitions to scenes
+### Accomplishments
+- Set up temporary transitions to between space scene and planet scenes
+- Made UI more responisve (buttons now change color when hovered over)
+- Changed all default cameras to XR cameras to work with VR
+- Researched how to implement reticles / gaze timer in unity for cardboard
+### Issues
+- Issue: Google Cardboard's heavily documented way of making a reticle is only available through prefabs for the outdated cardboard VR SDK. The new Google XR SDk has very little documentation of reticle implementation
