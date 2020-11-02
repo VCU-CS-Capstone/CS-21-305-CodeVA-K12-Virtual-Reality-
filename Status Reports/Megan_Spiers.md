@@ -103,3 +103,17 @@
 - Researched how to implement reticles / gaze timer in unity for cardboard
 ### Issues
 - Issue: Google Cardboard's heavily documented way of making a reticle is only available through prefabs for the outdated cardboard VR SDK. The new Google XR SDk has very little documentation of reticle implementation
+
+## Week Ten
+
+### Tasks
+- Get a gaze timer working if we want one
+- Documentation for everything thus far
+### Accomplishments
+- Added temporary transition to Pluto scene / button to return back to Space scene
+- Added GoogleVR assets to give us more freedom with prefabs
+- Noticed and corrected scene transition error from a simple image in front of camera fading to a cube around the camera fading so that transition is not jarring regardless of where user looks during transition
+- Angled all UI buttons by -20 degrees to give the illusion that they are always facing the camera to make clicking them easier
+- Added reticle to all scenes that responds on click to UI buttons in all scenes and planets in the Space scene
+### Issues
+- N/A
