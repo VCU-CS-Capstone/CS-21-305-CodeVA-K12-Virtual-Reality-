@@ -8,13 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jupiter Material
-  m_Shader: {fileID: 4800000, guid: adb9b18ac2466473a850d8acd17654a1, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _EMISSION _STEREOMODE_NONE
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _STEREOMODE_NONE
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -86,7 +87,7 @@ Material:
     - _Cutoff: 1
     - _DetailNormalMapScale: 1
     - _DistanceInMeters: 2
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _Exposure: 1
     - _FlipX: 0
     - _Gamma: 1
@@ -94,8 +95,8 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _InnerDiameter: 1.5
-    - _Metallic: 0.547
-    - _Mode: 1
+    - _Metallic: 0
+    - _Mode: 3
     - _OcclusionStrength: 1
     - _OuterDiameter: 2
     - _Parallax: 0.02
@@ -112,7 +113,7 @@ Material:
     - _StereoMode: 0
     - _UVSec: 0
     - _UseUIAlphaClip: 0
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
