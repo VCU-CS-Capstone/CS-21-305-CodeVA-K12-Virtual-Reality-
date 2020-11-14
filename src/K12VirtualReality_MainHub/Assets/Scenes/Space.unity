@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 63107152}
   - component: {fileID: 63107151}
   - component: {fileID: 63107155}
+  - component: {fileID: 63107157}
   - component: {fileID: 63107156}
   m_Layer: 0
   m_Name: Pluto
@@ -409,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: -153.3
 --- !u!114 &63107156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,6 +439,23 @@ MonoBehaviour:
             m_StringArgument: Pluto
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &63107157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63107150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda059e934c06fa4c8847c7e3eb53be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  center: {x: 0, y: 0, z: 0}
+  daysPerRevolution: 90600
+  radius: 22107
+  x_width: 1.2
+  z_width: 0.93
 --- !u!1 &63660844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
+  daysPerYear: 30687
   revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &98804762
 MonoBehaviour:
@@ -1016,7 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: -17.2
 --- !u!114 &98804763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,7 +1247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
+  daysPerYear: 88
   revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &143897041
 MonoBehaviour:
@@ -1244,7 +1262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: 1407.6
 --- !u!114 &143897042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1339,6 +1357,36 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   maxRaycastHits: 64
+--- !u!1 &295721984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2023723426}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295721985}
+  m_Layer: 0
+  m_Name: Ring_Inverse (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &295721985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2023723426}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295721984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 621859018}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &307446950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2332,6 +2380,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558667496}
   m_CullTransparentMesh: 0
+--- !u!1 &567216242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 621859017}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621859019}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &597067129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,12 +2605,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72b438d967730154fb2242deaa717b4b, type: 3}
---- !u!4 &621859018 stripped
+--- !u!4 &621859018
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 72b438d967730154fb2242deaa717b4b,
     type: 3}
   m_PrefabInstance: {fileID: 621859017}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668204366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 295721985}
+  m_Father: {fileID: 836931378}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &621859019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 621859017}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567216242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 836931378}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &668204366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 621859017}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621859018}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &676733430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,7 +2760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
+  daysPerYear: 60190
   revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &676733436
 MonoBehaviour:
@@ -2671,7 +2775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: 16.1
 --- !u!114 &676733437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2810,7 +2914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
+  daysPerYear: 365
   revolutionVector: {x: 0, y: 0, z: 0}
 --- !u!114 &690273538
 MonoBehaviour:
@@ -2825,7 +2929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: 23.9
 --- !u!114 &690273539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2984,6 +3088,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820020534}
   m_CullTransparentMesh: 0
+--- !u!1 &836931377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 621859017}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836931378}
+  m_Layer: 0
+  m_Name: Ring (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836931378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 621859017}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836931377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 621859018}
+  - {fileID: 621859019}
+  m_Father: {fileID: 1671667810}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &844105421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3520,7 +3656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 1, y: 0.5, z: 0.8}
-  speed: 2
+  hoursPerDay: 100
 --- !u!114 &1078899126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4299,7 +4435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
+  daysPerYear: 225
   revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &1316953850
 MonoBehaviour:
@@ -4314,7 +4450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 1, z: 0}
-  speed: 100
+  hoursPerDay: -5832.5
 --- !u!114 &1316953851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4733,7 +4869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
+  daysPerYear: 687
   revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &1360622701
 MonoBehaviour:
@@ -4748,7 +4884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: 24.6
 --- !u!114 &1360622702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5463,7 +5599,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 13545}
   m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_Children:
-  - {fileID: 621859018}
+  - {fileID: 836931378}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5480,7 +5616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
+  daysPerYear: 10795
   revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &1671667812
 MonoBehaviour:
@@ -5495,7 +5631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: 10.7
 --- !u!114 &1671667813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5902,8 +6038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
+  daysPerYear: 4333
+  revolutionVector: {x: 0, y: 0, z: 0}
 --- !u!114 &1763242678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5917,7 +6053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: 9.9
 --- !u!114 &1763242679
 MonoBehaviour:
   m_ObjectHideFlags: 0

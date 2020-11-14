@@ -5,8 +5,9 @@ using UnityEngine;
 public class Revolution : MonoBehaviour
 {
     public new GameObject gameObject;
-    public float speed;
+    public float daysPerYear;
     public Vector3 revolutionVector;
+    private float speedConstant = 3000f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,6 @@ public class Revolution : MonoBehaviour
     void Update()
     {
         if (revolutionVector.x == 0 && revolutionVector.y == 0 && revolutionVector.z == 0) revolutionVector = Vector3.up;
-        transform.RotateAround(gameObject.transform.position, revolutionVector, speed * Time.deltaTime);
+        transform.RotateAround(gameObject.transform.position, revolutionVector, Time.deltaTime / daysPerYear * speedConstant);
     }
 }

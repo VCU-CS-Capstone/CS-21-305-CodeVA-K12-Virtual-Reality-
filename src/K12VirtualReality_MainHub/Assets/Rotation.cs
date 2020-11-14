@@ -5,17 +5,20 @@ using UnityEngine;
 public class Rotation : MonoBehaviour
 {
     public Vector3 rotation;
-    public float speed;
+    public float hoursPerDay;
+    private float speedConstant = 420f;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 rotationCalculated = rotation * Time.deltaTime * speed;
+        Vector3 rotationCalculated = rotation;
+        if (hoursPerDay != 0)
+            rotationCalculated = rotation * Time.deltaTime / hoursPerDay * speedConstant;
         transform.Rotate(rotationCalculated);
     }
 }
