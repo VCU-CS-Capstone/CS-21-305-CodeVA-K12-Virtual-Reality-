@@ -178,7 +178,6 @@ GameObject:
   - component: {fileID: 98804759}
   - component: {fileID: 98804758}
   - component: {fileID: 98804757}
-  - component: {fileID: 98804761}
   - component: {fileID: 98804762}
   - component: {fileID: 98804763}
   m_Layer: 0
@@ -262,21 +261,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &98804761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98804756}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &98804762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 17
+  hoursPerDay: 0
 --- !u!114 &98804763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,11 +288,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 0.0060683293
+  daysPerRevolution: 30687
   radius: 15049
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &142541995
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +378,6 @@ GameObject:
   - component: {fileID: 143897038}
   - component: {fileID: 143897037}
   - component: {fileID: 143897036}
-  - component: {fileID: 143897040}
   - component: {fileID: 143897041}
   - component: {fileID: 143897042}
   m_Layer: 0
@@ -477,23 +459,8 @@ Transform:
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &143897040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143897035}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &143897041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 1408
+  hoursPerDay: 1407.6
 --- !u!114 &143897042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,11 +488,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 4.152097
+  daysPerRevolution: 88
   radius: 1918
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &307446950
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +634,6 @@ GameObject:
   - component: {fileID: 676733433}
   - component: {fileID: 676733432}
   - component: {fileID: 676733431}
-  - component: {fileID: 676733435}
   - component: {fileID: 676733436}
   - component: {fileID: 676733437}
   m_Layer: 0
@@ -752,21 +717,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &676733435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676733430}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &676733436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,7 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 16
+  hoursPerDay: 16.1
 --- !u!114 &676733437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,11 +744,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 0.004022688
+  daysPerRevolution: 60190
   radius: 18023
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &690273532
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +760,6 @@ GameObject:
   - component: {fileID: 690273535}
   - component: {fileID: 690273534}
   - component: {fileID: 690273533}
-  - component: {fileID: 690273537}
   - component: {fileID: 690273538}
   - component: {fileID: 690273539}
   m_Layer: 0
@@ -893,23 +841,8 @@ Transform:
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &690273537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690273532}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 0, z: 0}
 --- !u!114 &690273538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,7 +856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 24
+  hoursPerDay: 23.9
 --- !u!114 &690273539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,11 +870,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 1
+  daysPerRevolution: 365
   radius: 3355
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &820374293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,7 +1030,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1078899120
 GameObject:
@@ -1192,7 +1124,7 @@ Transform:
   m_LocalScale: {x: 3000, y: 3000, z: 3000}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1078899125
 MonoBehaviour:
@@ -1207,7 +1139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 1, y: 0, z: 0}
-  speed: 0
+  hoursPerDay: 1
 --- !u!1 &1201128366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,7 +1226,6 @@ GameObject:
   - component: {fileID: 1316953847}
   - component: {fileID: 1316953846}
   - component: {fileID: 1316953845}
-  - component: {fileID: 1316953849}
   - component: {fileID: 1316953850}
   - component: {fileID: 1316953851}
   m_Layer: 0
@@ -1371,28 +1302,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316953844}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2297}
-  m_LocalScale: {x: 150, y: 150, z: 150}
+  m_LocalScale: {x: 149.99998, y: 149.99998, z: 149.99998}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1316953849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316953844}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &1316953850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,7 +1322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: 1, z: 0}
-  speed: -5832
+  hoursPerDay: -5832.5
 --- !u!114 &1316953851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,11 +1336,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 1.6255451
+  daysPerRevolution: 225
   radius: 2297
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &1360622695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,7 +1352,6 @@ GameObject:
   - component: {fileID: 1360622698}
   - component: {fileID: 1360622697}
   - component: {fileID: 1360622696}
-  - component: {fileID: 1360622700}
   - component: {fileID: 1360622701}
   - component: {fileID: 1360622702}
   m_Layer: 0
@@ -1519,23 +1433,8 @@ Transform:
   m_LocalScale: {x: 250, y: 250, z: 250}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1360622700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360622695}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &1360622701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1549,7 +1448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 25
+  hoursPerDay: 24.6
 --- !u!114 &1360622702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1563,11 +1462,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 0.5319149
+  daysPerRevolution: 687
   radius: 4696
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &1449672130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,7 +1544,6 @@ GameObject:
   - component: {fileID: 1671667809}
   - component: {fileID: 1671667808}
   - component: {fileID: 1671667807}
-  - component: {fileID: 1671667811}
   - component: {fileID: 1671667812}
   - component: {fileID: 1671667813}
   m_Layer: 0
@@ -1730,21 +1627,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1671667811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671667806}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &1671667812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,7 +1640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 11
+  hoursPerDay: 10.7
 --- !u!114 &1671667813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,11 +1654,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 0.03394433
+  daysPerRevolution: 10795
   radius: 11970
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &1758405943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,7 +1772,6 @@ GameObject:
   - component: {fileID: 1763242675}
   - component: {fileID: 1763242674}
   - component: {fileID: 1763242673}
-  - component: {fileID: 1763242677}
   - component: {fileID: 1763242678}
   - component: {fileID: 1763242679}
   m_Layer: 0
@@ -1973,23 +1853,8 @@ Transform:
   m_LocalScale: {x: 2000, y: 2000, z: 2000}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1763242677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763242672}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  speed: 10
-  revolutionVector: {x: 0, y: 1, z: 0}
 --- !u!114 &1763242678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2003,7 +1868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 10
+  hoursPerDay: 9.9
 --- !u!114 &1763242679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2017,11 +1882,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   center: {x: 0, y: 0, z: 0}
-  speed: 0.08431703
+  daysPerRevolution: 4333
   radius: 7830
   x_width: 1
   z_width: 1
-  speedModifier: 0.15
 --- !u!1 &1874636853
 GameObject:
   m_ObjectHideFlags: 0
