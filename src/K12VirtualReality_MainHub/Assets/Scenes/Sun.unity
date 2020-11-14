@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 1, y: 0.5, z: 0.8}
-  speed: 2
+  hoursPerDay: 1
 --- !u!135 &964809804
 SphereCollider:
   m_ObjectHideFlags: 0

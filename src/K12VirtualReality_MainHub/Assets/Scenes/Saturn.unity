@@ -290,6 +290,11 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 40611130}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &40611132 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 40611130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &165894959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1941,7 +1946,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_Children:
-  - {fileID: 40611131}
+  - {fileID: 40611132}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1958,7 +1963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotation: {x: 0, y: -1, z: 0}
-  speed: 100
+  hoursPerDay: 10.7
 --- !u!1001 &1926280011
 PrefabInstance:
   m_ObjectHideFlags: 0
