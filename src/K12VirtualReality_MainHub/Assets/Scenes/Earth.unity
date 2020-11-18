@@ -606,9 +606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1904512874}
-  daysPerYear: 54.6
-  revolutionVector: {x: 0, y: -1, z: 0}
+  DaysPerYear: 0
+  RevolutionVector: {x: 0, y: -1, z: 0}
+  ObjectToRevolveAround: {fileID: 1904512874}
 --- !u!135 &545419951
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -681,8 +681,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 0, z: 0}
-  hoursPerDay: 708.7
+  RotationVector: {x: 0, y: 0, z: 0}
+  HoursPerDay: 0
 --- !u!1 &631724581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,8 +1846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 23.9
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 23.9
 --- !u!1 &1950133151
 GameObject:
   m_ObjectHideFlags: 0

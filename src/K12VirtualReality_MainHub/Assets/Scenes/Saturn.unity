@@ -1957,8 +1957,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 10.7
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 10.7
 --- !u!1001 &1926280011
 PrefabInstance:
   m_ObjectHideFlags: 0
