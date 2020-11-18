@@ -4,21 +4,35 @@ using UnityEngine;
 
 public class Rotation : MonoBehaviour
 {
-    public Vector3 rotation;
-    public float hoursPerDay;
-    private float speedConstant = 420f;
+    // Three component vector to hold the rotation of the object.
+    public Vector3 RotationVector;
+    // Float to contain the number of hours per day.
+    public float HoursPerDay;
+    // Float for constant speed value.
+    private float _SpeedConstant;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        // Set the speed constant to an arbitrary float of 420.0f.
+        _SpeedConstant = 420.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 rotationCalculated = rotation;
-        if (hoursPerDay != 0)
-            rotationCalculated = rotation * Time.deltaTime / hoursPerDay * speedConstant;
+        // Create a new three component vector to hold the previous rotation.
+        Vector3 rotationCalculated = RotationVector;
+
+        // Check that the hours per day is not equal to zero.
+        // If the hours per day is zero then there would be no rotation.
+
+        if (HoursPerDay != 0.0f)
+        // Once the check is completed, multiply the old rotation by
+        // Time.deltaTime. Then divide that product by the product from hoursPerDay times the speedConstant.
+            rotationCalculated = RotationVector * Time.deltaTime / HoursPerDay * _SpeedConstant;
+
+        // Finally, transform the object using the rotationCalculated vector.
         transform.Rotate(rotationCalculated);
     }
 }
