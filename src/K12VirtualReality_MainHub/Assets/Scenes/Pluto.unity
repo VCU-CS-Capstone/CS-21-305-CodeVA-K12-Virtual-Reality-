@@ -1229,8 +1229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: -153.3
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: -153.3
 --- !u!1 &1090134196
 GameObject:
   m_ObjectHideFlags: 0
