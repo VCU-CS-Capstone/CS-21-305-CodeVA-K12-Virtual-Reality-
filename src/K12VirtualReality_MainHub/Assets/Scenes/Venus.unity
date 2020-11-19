@@ -2868,7 +2868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationVector: {x: 0, y: 1, z: 0}
-  HoursPerDay: 5832.5
+  HoursPerDay: -5832.5
 --- !u!1 &1912590326
 GameObject:
   m_ObjectHideFlags: 0

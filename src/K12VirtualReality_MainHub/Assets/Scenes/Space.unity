@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationVector: {x: 0, y: -1, z: 0}
-  HoursPerDay: 153.6
+  HoursPerDay: -153.3
 --- !u!114 &63107156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationVector: {x: 0, y: -1, z: 0}
-  HoursPerDay: 17.2
+  HoursPerDay: -17.2
 --- !u!114 &98804763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3533,10 +3533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
-  RotationVector: {x: 0.3, y: 0.5, z: 0.6}
+  RotationVector: {x: 1, y: 0.5, z: 0.8}
   HoursPerDay: 648
-
 --- !u!114 &1078899126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4329,7 +4327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotationVector: {x: 0, y: 1, z: 0}
-  HoursPerDay: 5832.5
+  HoursPerDay: -5832.5
 --- !u!114 &1316953851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5493,7 +5491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DaysPerYear: 10759
+  DaysPerYear: 10795
   ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &1671667812
 MonoBehaviour:
