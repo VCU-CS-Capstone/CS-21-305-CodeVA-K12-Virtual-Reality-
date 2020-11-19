@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.27160072, b: 1, a: 0.21960784}
+  m_Color: {r: 0, g: 0.27160072, b: 1, a: 0.23529412}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3533,8 +3533,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
   RotationVector: {x: 0.3, y: 0.5, z: 0.6}
-  HoursPerDay: 100
+  HoursPerDay: 648
+
 --- !u!114 &1078899126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4888,7 +4890,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f500aeed670bb404c8d6fd25f68ea769, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3f500993a9927324d82b308cb84c365f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1

@@ -13,11 +13,13 @@ public class clickSwitchScenes : MonoBehaviour {
 	public Image blackFadeImageBack;
 	public Image blackFadeImageTop;
 	public Image blackFadeImageBottom;
+	
 
 
     public void buttonChangeScenes(string sceneName){
     	
     	StartCoroutine(FadeOutAndIn(sceneName));
+    	
     	
     }
 
@@ -31,5 +33,7 @@ public class clickSwitchScenes : MonoBehaviour {
     									(blackFadeImageBottom.color.a==1));
     	SceneManager.LoadScene(sceneName);
     }
-  
+
+
+  	
 }
