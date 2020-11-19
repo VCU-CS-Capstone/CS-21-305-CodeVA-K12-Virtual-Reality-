@@ -248,11 +248,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<i> Distance from Sun (km):</i>
+  m_text: '<i> Distance from Sun (10<sup>7</sup> km):</i>
 
-    57,900,000
+    5.79
 
-    <i>Gravity (<sup>m</sup>/<sub>s<sup>2</sup></sup></sub>):<i>
+    <i>Gravity
+    (<sup>m</sup>/<sub>s<sup>2</sup></sup></sub>):</i>
 
     3.7
 
@@ -1617,7 +1618,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -0.2}
-  m_SizeDelta: {x: 75, y: 10}
+  m_SizeDelta: {x: 90, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1147590333
 MonoBehaviour:
@@ -1638,7 +1639,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mercury is the closest planet to the Sun
+  m_text: "- Mercury is the closest planet to the Sun.\n- Mercury is named after
+    the Roman messenger \n  god."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -1672,7 +1674,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2004,7 +2006,7 @@ MonoBehaviour:
 
     Terrestrial
 
-    <i>Moons:<i>
+    <i>Moons:</i>
 
     0'
   m_isRightToLeft: 0
