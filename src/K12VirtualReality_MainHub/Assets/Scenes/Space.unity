@@ -391,7 +391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63107150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 22107}
+  m_LocalPosition: {x: 0, y: 0, z: -22107}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_Children: []
   m_Father: {fileID: 0}
@@ -409,8 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: -153.3
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 153.6
 --- !u!114 &63107156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,11 +451,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fda059e934c06fa4c8847c7e3eb53be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {x: 0, y: 0, z: 0}
-  daysPerRevolution: 90600
-  radius: 22107
-  x_width: 1.2
-  z_width: 0.93
+  Center: {x: 0, y: 0, z: 0}
+  DaysPerRevolution: 90600
+  Radius: 22107
+  ZWidth: 1.2
+  XWidth: 0.93
 --- !u!1 &63660844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98804756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 16333}
+  m_LocalPosition: {x: 0, y: 0, z: -16333}
   m_LocalScale: {x: 400, y: 400, z: 400}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1018,9 +1018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 30687
-  revolutionVector: {x: 0, y: 1, z: 0}
+  DaysPerYear: 30687
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &98804762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,8 +1032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: -17.2
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 17.2
 --- !u!114 &98804763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,7 +1227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143897035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2151}
+  m_LocalPosition: {x: 2151, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1246,9 +1245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 88
-  revolutionVector: {x: 0, y: 1, z: 0}
+  DaysPerYear: 88
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &143897041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,8 +1259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 1407.6
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 1407.6
 --- !u!114 &143897042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,9 +2671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 60190
-  revolutionVector: {x: 0, y: 1, z: 0}
+  DaysPerYear: 60190
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &676733436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2688,8 +2685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 16.1
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 16.1
 --- !u!114 &676733437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2808,7 +2805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690273532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3673}
+  m_LocalPosition: {x: 3673, y: 0, z: 0}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_Children:
   - {fileID: 892929065}
@@ -2827,9 +2824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 365
-  revolutionVector: {x: 0, y: 0, z: 0}
+  DaysPerYear: 365.25
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &690273538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2842,8 +2838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 23.9
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 23.9
 --- !u!114 &690273539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3537,8 +3533,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 1, y: 0.5, z: 0.8}
-  hoursPerDay: 648
+
+  RotationVector: {x: 0.3, y: 0.5, z: 0.6}
+  HoursPerDay: 648
+
 --- !u!114 &1078899126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4298,7 +4296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316953844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2641}
+  m_LocalPosition: {x: -2641, y: 0, z: 0}
   m_LocalScale: {x: 150, y: 150, z: 150}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4316,9 +4314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 225
-  revolutionVector: {x: 0, y: 1, z: 0}
+  DaysPerYear: 225
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &1316953850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4331,8 +4328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: 1, z: 0}
-  hoursPerDay: -5832.5
+  RotationVector: {x: 0, y: 1, z: 0}
+  HoursPerDay: 5832.5
 --- !u!114 &1316953851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4732,7 +4729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360622695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4973}
+  m_LocalPosition: {x: -4973, y: 0, z: 0}
   m_LocalScale: {x: 250, y: 250, z: 250}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4750,9 +4747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 687
-  revolutionVector: {x: 0, y: 1, z: 0}
+  DaysPerYear: 687
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &1360622701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4765,8 +4761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 24.6
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 24.6
 --- !u!114 &1360622702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5478,7 +5474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671667806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 13545}
+  m_LocalPosition: {x: 6295, y: 0, z: 11558}
   m_LocalScale: {x: 1000, y: 1000, z: 1000}
   m_Children:
   - {fileID: 621859018}
@@ -5497,9 +5493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 10795
-  revolutionVector: {x: 0, y: 1, z: 0}
+  DaysPerYear: 10759
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &1671667812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5512,8 +5507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 10.7
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 10.7
 --- !u!114 &1671667813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5831,7 +5826,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!135 &1763242673
 SphereCollider:
@@ -5854,7 +5849,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763242672}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0
   m_MotionVectors: 1
@@ -5901,7 +5896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763242672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9083}
+  m_LocalPosition: {x: 0, y: 0, z: -9083}
   m_LocalScale: {x: 2000, y: 2000, z: 2000}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5919,9 +5914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObject: {fileID: 1078899120}
-  daysPerYear: 4333
-  revolutionVector: {x: 0, y: 0, z: 0}
+  DaysPerYear: 4333
+  ObjectToRevolveAround: {fileID: 1078899120}
 --- !u!114 &1763242678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5934,8 +5928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: {x: 0, y: -1, z: 0}
-  hoursPerDay: 9.9
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 9.9
 --- !u!114 &1763242679
 MonoBehaviour:
   m_ObjectHideFlags: 0
