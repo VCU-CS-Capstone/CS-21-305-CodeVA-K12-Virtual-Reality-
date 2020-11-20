@@ -38,6 +38,9 @@ Once you have created your project you should be greeted with this screen:
 Next we need to add the Google Cardboard integration for our project.
 We can do this by following [this](https://developers.google.com/cardboard/develop/unity/quickstart) link and following Google's directions very carefully!
 
+We then need to add the GoogleVR SDK to our project.
+Download the most recent version of the GoogleVRForUnity<version_number>.unitypackage file from this [this](https://github.com/googlevr/gvr-unity-sdk/releases) link and import it into Unity by clicking on the Assests menu at the top of the Unity screen and then selecting Import Package. You can then locate the file within your windows explorer and select it for import. 
+
 Once we have the project set up with Google Cardboard integration then we are good to get started on making the Solar System.
 
 ---
