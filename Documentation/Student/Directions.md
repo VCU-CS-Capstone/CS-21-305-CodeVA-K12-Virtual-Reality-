@@ -41,6 +41,18 @@ We can do this by following [this](https://developers.google.com/cardboard/devel
 We then need to add the GoogleVR SDK to our project.
 Download the most recent version of the GoogleVRForUnity<version_number>.unitypackage file from this [this](https://github.com/googlevr/gvr-unity-sdk/releases) link and import it into Unity by clicking on the Assests menu at the top of the Unity screen and then selecting Import Package. You can then locate the file within your windows explorer and select it for import. 
 
+After adding the Google Cardboard integration and the GoogleVR SDK to our project, there a few actions that we should take to be ready to build. With exception of step 1, these steps should be followed for every scene you create in our project. 
+1. With the HelloCardboard scene open, navigate to the CubeRoom Prefab in the heirarchy and select it. When the inspector opens on the right, locate, right-click on, and remove the CardboardStartup script. This script causes an error that Google has not yet resolved, and it is not needed for our project.
+![CubeRoom_Set_Up](Screenshots/Unity/CubeRoom_Set_Up.png "CubeRoom Set Up")
+2. If the camera present is listed as XRRig, skip to step B, otherwise, proceed to A.
+- A. Select the camera from the heirarchy (it may be named camera or some variant of Main Camera), and in the inspector, name it Main Camera and set the tag to MainCamera. In the heirarchy, right click on the camera, select XR, and then select Convert Main Camera to XRRig. This is the camera preset that allows us to work in VR. 
+![Camera_XR_Conversion](Screenshots/Unity/Camera_XR_Conversion.png "Camera XR Conversion")
+- B. Select the XRRig in the heirarchy. Camera position will be scene dependent and cannot be set universally; however, in the HelloCardboard scene, you can set the position to X: 0 Y: 2 and Z: 0 to get a good view. Next, the arrow beside the XRRig in the heirarchy should reveal it has two children: Camera Offset and Main Camera. Camera Offset does <b>NOT</b> need to be changed. Navigate to Main Camera, and in the inspector, change the near clipping plane to 0.09 and the far clipping plane to 50000.
+</br>NOTE: When changing camera position, always change the position of the parent XRRig and not the children Camera Offset or Main Camera as they will move dynamically with the parent camera. 
+![Camera_Plane_Set_Up](Screenshots/Unity/Camera_Plane_Set_Up.png "Camera Plane Set Up")
+- C. <TO ADD>
+
+
 Once we have the project set up with Google Cardboard integration then we are good to get started on making the Solar System.
 
 ---
