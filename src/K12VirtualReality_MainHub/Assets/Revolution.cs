@@ -32,12 +32,12 @@ public class Revolution : MonoBehaviour
 
         // Calculate the angle in which we want to rotate by dividing deltaTime by the product
         // of daysPerYear and speedConstant.
-        //float angle = ;
+        float angle = Time.deltaTime / DaysPerYear * _SpeedConstant;
 
         // Transform the object using the RotateAround function, passing in the following:
         // - Transform position of the object we want to revolve around.
         // - The new revolution vector.
         // - The angle in which we want to rotate around.
-        transform.RotateAround(ObjectToRevolveAround.transform.position, _RevolutionVector, Time.deltaTime / DaysPerYear * _SpeedConstant);
+        transform.RotateAround(ObjectToRevolveAround.transform.position, _RevolutionVector, angle);
     }
 }
