@@ -81,3 +81,88 @@
 - Supplement and support the group
 ### Questions & Issues
 - Issue: Had a compiler error when I pulled new code, but am currently resolving it
+
+## Week Seven
+
+### What have you done?
+- Met with Mr. Shank
+- Began developing elliptical orbit
+### What are you working on in the upcoming week?
+- Create a script for elliptical orbit
+- Give each planet a correctly proportional time for a complete rotation around the sun
+### Questions & Issues
+- Nothing at the moment!
+
+## Week Eight
+
+### What have you done?
+- Met with Mr. Shank
+- Created custom code for elliptical orbit
+- Assembled Google Carboard headset
+- Adjusted revolution speed of planets
+### What are you working on in the upcoming week?
+- Set the planets on the correct elliptical path
+- Fix the rotation of each planet to make them proportional to each other
+### Questions & Issues
+- Nothing at the moment!
+
+## Week Nine
+
+### What have you done?
+- Modified planet rotation speed
+- Updated elliptical orbits where necessary
+### What are you working on in the upcoming week?
+- Push new changes
+- Add Pluto’s rotation and revolution speed
+- Gather planetary facts for next stage of the program with Jacob
+### Questions & Issues:
+- Nothing at the moment!
+
+## Week Ten
+
+### What have you done?
+- Met with Mr. Shank
+- Created a pull request with new changes
+- Collected planetary facts, such as diameter, distance from the sun, gravitational constant, and additionally fun facts about each planet.
+- Added facts to Jacob's document
+### What are you working on in the upcoming week?
+- Create new branch with all new changes from dev
+- Apply proportional rotational and revolution speeds with new features
+- Conclude the fact finding with Jacob
+### Questions & Issues:
+- There's a difference between a day and a full rotation on some planets. I'm doing more research into which is more practical for the proportional speed, because those numbers can be drastically different in some cases.
+
+## Week Eleven
+
+### What have you done?
+- Met with Mr. Shank
+- Merged revolution and rotation speeds to dev
+- Updated each individual scene for each planet to fix rotational speed
+- Added an adjustable variable to keep all speeds proportional but allow changes
+- Cleaned up variable names and simplified code
+- Started creating presentation
+### What are you working on in the upcoming week?
+- Complete the class presentation for 11/24
+- Look into purchasing different types of headsets
+- Bug squashing!
+- Last minute fixes
+- Documentation
+- Anything else needed :)
+### Questions & Issues:
+- N/A
+
+## Week Twelve
+
+### What have you done?
+- Met with Mr. Shank
+- Updated presentation slides
+- Added challenges and learning objectives to the PowerPoint
+- Incorporated a script for the class presentation
+- Practiced presenting the PowerPoint
+### What are you working on in the upcoming week?
+- Present our project to the class tomorrow
+- Finish documentation
+- Update comments on rotation/revolution scripts
+- Anything last minute the team needs!
+### Questions & Issues
+- N/A
