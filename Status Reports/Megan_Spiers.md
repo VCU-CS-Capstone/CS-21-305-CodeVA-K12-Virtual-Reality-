@@ -129,3 +129,18 @@
 - Documentation for various things
 ### Issues
 - N/A
+
+## Week Twelve
+
+### Tasks
+- more documentation
+- Fix audio issue
+- finish plan for UI facts display 
+- Anything else we need 
+### Accomplishments
+- Worked on documentation 
+- Move space scene buttons into a more functional setting below the user's view
+- Moved back buttons in scene to the left side 
+- Started planning how UI facts will be displayed 
+### Issues
+- N/A
