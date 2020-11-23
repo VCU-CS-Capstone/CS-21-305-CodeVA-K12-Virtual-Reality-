@@ -144,3 +144,16 @@
 - Started planning how UI facts will be displayed 
 ### Issues
 - N/A
+
+## Week Thirteen
+
+### Tasks
+- Finish documentation
+- Last minute bug squashing 
+### Accomplishments
+- Added documentation to students instructions
+- Fix audio issue by adding different music to space scenes
+- Finish adding UI panels that display facts around planets
+- Work on documentation for various things 
+### Issues
+- N/A
