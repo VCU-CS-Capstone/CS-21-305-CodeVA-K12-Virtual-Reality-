@@ -117,3 +117,15 @@
 - Added reticle to all scenes that responds on click to UI buttons in all scenes and planets in the Space scene
 ### Issues
 - N/A
+
+## Week Eleven
+
+### Tasks
+- Finish documentation
+- Plan how to display facts on UI
+- Look into how music breaks/skips in space scene 
+### Accomplishments
+- Fixed VR error in main menu scene
+- Documentation for various things
+### Issues
+- N/A
