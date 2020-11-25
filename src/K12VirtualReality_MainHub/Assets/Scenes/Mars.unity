@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- The tallest mountin in the solar system, Olympus \n  Mons, is on Mars.\n-
+  m_text: "- The tallest mountain in the solar system, \n  Olympus Mons, is on Mars.\n-
     Sunsets on Mars are blue."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
