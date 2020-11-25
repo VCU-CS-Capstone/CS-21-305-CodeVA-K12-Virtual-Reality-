@@ -34,6 +34,10 @@ public class EllipticalOrbit : MonoBehaviour
     void Update()
     {
         _Time = Time.time;
+        // Using the mathematical formula for an ellipses
+        // (X/A)^2 + (Z/B)^2 = R^2
+        // Where X = R*sin(t) and Z = R*cos(t)
+        // and A and B are XWidth and ZWidth
         transform.position = new Vector3(Radius * (float)(Math.Sin(_SpeedConstant * _Time / DaysPerRevolution) / XWidth), 0, Radius * (float)(Math.Cos(_SpeedConstant * _Time / DaysPerRevolution)) / ZWidth);
     }
 }
