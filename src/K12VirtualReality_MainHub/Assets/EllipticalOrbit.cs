@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class EllipticalOrbit : MonoBehaviour
 {
-    // Three component vector to hold the center of the elliptical orbit.
-    public Vector3 Center;
     // Float to hold the days per one revolution.
     public float DaysPerRevolution;
     // Float to hold the radius of the orbit.
@@ -22,21 +20,15 @@ public class EllipticalOrbit : MonoBehaviour
     private float _SpeedConstant;
 
     // Start is called before the first frame update
-    /*void Start()
+    void Start()
     {
-        // Set the center of the orbit to Zero.
-        Center = Vector3.zero;
-        // Set the days per revolution to 1.0f.
-        DaysPerRevolution = 1.0f;
-        // Set the radius of the orbit to 1.0f.
-        Radius = 1.0f;
         // Set the speed constant to an arbitrary 15.0f.
         _SpeedConstant = 15.0f;
         // Set the width in the X axis to 1.0f.
         XWidth = 1.0f;
         // Set the width in the Z axis to 1.0f.
         ZWidth = 1.0f;
-    }*/
+    }
 
     // Update is called once per frame
     void Update()
