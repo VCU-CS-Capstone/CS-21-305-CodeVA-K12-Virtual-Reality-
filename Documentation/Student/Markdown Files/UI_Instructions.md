@@ -1,5 +1,5 @@
 # Basic User Interface Creation
-<b>NOTE: Getting Started instructions should be viewed before moving to this step. </b>
+<b>NOTE: Setup instructions should be viewed before moving to this step. </b>
 
 ## Student Goals ##
 - Learn the details involved in the creation and manipulation of basic UI elements in Unity
