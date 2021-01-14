@@ -1,5 +1,5 @@
 # Regular and Fading Animation Scene Transition
-<b>NOTE: Basic UI Creation instructions should be viewed before moving to this step. </b>
+<b>NOTE: UI Creation instructions should be viewed before moving to this step. </b>
 
 ## Student Goals ##
 - Learn the details involved in scene transition in Unity
