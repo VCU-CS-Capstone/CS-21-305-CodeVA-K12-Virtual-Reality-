@@ -13,9 +13,9 @@ Naviagate to the HelloCardboard scene
 2. In the inspector for the canvas object, under the canvas component, change the render mode from screen space to world space. This is necessary so that the canvas can be placed anywhere we like in the scene rather than just taking up the whole screen like a pause menu would in a traditional none VR video game.
 3. Still in the inspector for the canvas object, remove the graphic raycaster component by right-clicking the component title and selecting remove component from the menu. Add the GvrPointerPhysicsRaycaster and GvrPointerGraphicsRaycaster components. Do <b>NOT</b> change the settings of these components. They are necessary so that the reticle can detect the objects and respond to them in game. Also, do <b>NOT</b> alter the Canvas Scaler component.
 4. Using the Pos X, Pos Y, Pos Z, Width, and Height elements of the Rect Transform component, move the the canvas wherever you would like it to be in the scene. For instance, to allow for the best view, we chose to place our canvas just barely in front of one of the walls of the CubeRoom.
-5. (Optional) Change the name of the canvas object so that it is distinguishable from other canvases you may add to the scene at a later time.
+5. For this particular project, do <b>NOT</b> change the name of the canvas object from its default. In later instructions, the default name will need to be the same across multiple scenes to make certain actions universal. 
 
-</br> A sample canvas can use the following name and rect transform settings; however; you are free to use whatever position, dimensions, and naming scheme you prefer.</br>
+</br> A sample canvas can use the following rect transform settings; however; you are free to use whatever position and dimensions you prefer. Your canvas name should be "Canvas"; this will differ from the images as Canvas already existed in our scene.</br>
 ![Canvas_Rect_Transform_Inspector](Screenshots/Unity/Canvas_Rect_Transform_Inspector.png "Canvas Rect Transform Inspector")
 
 #### Panel ####
