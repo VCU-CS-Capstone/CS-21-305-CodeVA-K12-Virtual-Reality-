@@ -45,7 +45,22 @@ that you wish to switch to when you click the button, New Scene.
 
 4. Next, create an empty game object with the name Black Fades Images and drag all black fade images to be its children. Make sure the Black Fade Images game object is a child of the Canvas but not children of the panel or the button(s). With the Black Fade Images game object selected, set the position to X: 0, Y: 0, Z: 0, respectively. When you click any of the individual black fade images, in the inspector you will see a box with a check mark in it beside the image component. This is to turn images on/off. Turn all images off execpt Black Fade Front. This will help us focus on one image at a time.
 
-5. With the Black Fade Front image selected and on, set position to X: 0, Y: 0, Z: 0, Width: 1, and Height: 1. Set the color to black, and make sure Raycast Target and Maskable are checked. 
+5. With the Black Fade Front image selected and on, set position to X: 0, Y: 0, Z: 0, Width: 1, and Height: 1. Set the color to black, and make sure Raycast Target and Maskable are checked.
 
-</br> It will look like the image below. </br>
+6. Repeat step 5 with the remaining five images, and change their position and rotation values to move them to their respective locations to form a cube around the camera.
+
+</br> With only the Black Fade Front turned on, it will look like the image below. </br>
 ![Black_Fade_Front_Image_Example](Screenshots/Unity/Black_Fade_Front_Image_Example.png "Black Fade Front Image Example")
+
+</br> Now we are ready to start animating! </br>
+
+7. Select the SceneChanger game object and press ctrl+6. This will bring up the animating window (You can click and drag the animating window beside the project and console windows for ease of access). Select the drop down arrow and select create new clip. Save it as SceneFadeIn.anim.
+
+8. With SceneFadeIn selected from the drop down menu, press the record button. Click the Black Fade Front image, and in the inspector, turn it on and set the alpha value to 255 by selecting the color and dragging the A slider. Repeat this step for the remaining images. Do <b>NOT</b> stop recording; however, if you do, you can simply hit the record button again. You will not lose your progress.
+
+</br><i>Note: You may have to turn the image off and on again and move the alpha from 255 back to 255 if these settings were already in place. You will know you did it correctly if the options you have selected appear in the animation window. </i></br>
+
+9. Still recording, drag the vertical white bar in the animation window to the 1:00 second mark; you may have to zoom out within the window to see it. Select the Black Fade Front Image and turn the image off and set the alpha to 0. Do the same for the remaining images, and then stop recording by pressing the record button, again. You should be able to play your animation in the animation window and see it work now.
+
+</br> Your animation window should look similar to the following image </br>
+![SceneFadeIn_Animation_Window_Example](Screenshots/Unity/SceneFadeIn_Animation_Window_Example.png "SceneFadeIn Animation Window Example")
