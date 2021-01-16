@@ -62,5 +62,34 @@ that you wish to switch to when you click the button, New Scene.
 
 9. Still recording, drag the vertical white bar in the animation window to the 1:00 second mark; you may have to zoom out within the window to see it. Select the Black Fade Front Image and turn the image off and set the alpha to 0. Do the same for the remaining images, and then stop recording by pressing the record button, again. You should be able to play your animation in the animation window and see it work now.
 
-</br> Your animation window should look similar to the following image </br>
+</br> Your animation window should look similar to the following image. </br>
 ![SceneFadeIn_Animation_Window_Example](Screenshots/Unity/SceneFadeIn_Animation_Window_Example.png "SceneFadeIn Animation Window Example")
+
+10. Create a new animation clip, SceneFadeOut, and follow the same logic to have the image turn on and have the alpha at 0 at the 0:00 second mark, and then turn the image on and set the alpha to 255 at the 1:00 second mark. The image will be turned on for both marks this time.
+
+11. In the project window, navigate to the SceneChanger folder and select the SceneFadeIn animation make sure loop time is <b>NOT</b> checked. Repeat for the SceneFadeOut animation. 
+
+12. Still in the folder, double-click the controller to bring up the Animator window. This is different from the previously used <i>Animation</i> window. Use the plus sign drop dowm to create a new Boolean trigger with the name Scene_Fade_In_And_Out_Trigger. A boolean is a value that is either true or false; we we use this trigger to say, "if the condition for this trigger is true, then <i>trigger</i> the animation. Select SceneFadeIn from the project window and set the speed to 0.5. Repeat for SceneFadeOut.
+
+13. Right-click on the entry state and select make transition and drag it to SceneFadeIn if this transition does not already exist. Make another transition from the SceneFadeIn state to the SceneFadeOut state. Click on the arrow transition, and in the inspector, make sure the exit time is <b>NOT</b> checked. Drag the right most arrow of the animation preview all the way to the left most arrow so that the diagonal line between the two animations dissappears. Add the condition of the trigger we created and set it to true.
+
+</br> Your transition state should look like this. </br>
+![Transition_State_Example](Screenshots/Unity/Transition_State_Example.png "Transition State Example")
+
+14. Click the SceneChangerScript object and open the clickSwitchScenes script. Edit it to resemble the following, then save and close the script.
+
+</br> An example of the new clickSwitchScenes script: </br>
+![Edited_clickSwitchScenes_Script](Screenshots/Unity/Edited_clickSwitchScenes_Script.png "Edited clickSwitchScenes Script")
+
+15. In the inspector for the SceneChangerScript game object you will now have the Animator and Black Fade images boxes available to fill. Drag the SceneChanger Animator Controller to the Animator box and the black fade images to their respective boxes. Next, click the SceneChanger game object from the hierarchy, add the SceneChangerScript as a component, and fill the boxes the same way.
+
+</br> The SceneChangerScript inspector should look like this when filled correctly. </br>
+![SceneChangerScript_Inspector_Example](Screenshots/Unity/SceneChangerScript_Inspector_Example.png "SceneChangerScript_Inspector_Example")
+
+16. Right click on the SceneChanger game object and select copy. Switch to the New Scene scene, and delete the canvas and all of its children. Paste the SceneChanger game object into the hierarchy. Change the panel text to "New Scene", Button name to ButtonToHelloCardboard, Button Text to "To Main Menu", and Button OnClick() destination to the HelloCardboard scene. By using the same setup as before, we will not have to create more images or another animator. This game object can be pasted as a baseline into every scene for this project and altered accordingly. 
+
+</br><i>Copy and Paste is your friend in Unity as long as you make the proper changes to the copies you produce</i></br>
+
+17. Repeat step 15 in the New Scene scene.
+
+</br> At this point you should have a working fading scene transition. Play the game and try it out!
