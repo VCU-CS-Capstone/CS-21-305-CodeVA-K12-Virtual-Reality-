@@ -3,7 +3,7 @@
 
 ## Student Goals ##
 - Learn the details involved in applying audio to a scene in Unity
-- Play a song in each scene
+- Play simple audio in each scene
 - Have audio fade in and out during scene changes
 - Generalize the background music logic to use in other instances in Unity projects
 
