@@ -40,4 +40,4 @@ That's it! If you play the game you can now hear the audio fading in to open a s
 
 We used the same game object name of BackgroundMusic in both scenes so the animation will work regardless of what file is used for the audio source.
 
-5. Play the game and see your background music in action!
+5. Play the game and hear your background music in action!
