@@ -1802,7 +1802,7 @@ GameObject:
   - component: {fileID: 1358283194}
   - component: {fileID: 1358283193}
   m_Layer: 5
-  m_Name: ButtonToSolarSystem
+  m_Name: ButtonToHelloCardboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
