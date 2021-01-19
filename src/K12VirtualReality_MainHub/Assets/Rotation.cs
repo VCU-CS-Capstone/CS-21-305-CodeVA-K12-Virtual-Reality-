@@ -22,17 +22,19 @@ public class Rotation : MonoBehaviour
     void Update()
     {
         // Create a new three component vector to hold the previous rotation.
-        Vector3 rotationCalculated = RotationVector;
+        Vector3 newRotation = Vector3.zero;
 
         // Check that the hours per day is not equal to zero.
         // If the hours per day is zero then there would be no rotation.
-
         if (HoursPerDay != 0.0f)
-        // Once the check is completed, multiply the old rotation by
-        // Time.deltaTime. Then divide that product by the product from hoursPerDay times the speedConstant.
-            rotationCalculated = RotationVector * Time.deltaTime / HoursPerDay * _SpeedConstant;
+        {
+            // Once the check is completed, multiply the old rotation by
+            // Time.deltaTime. Then divide that product by the product from hoursPerDay times the speedConstant.
+            float rotationTime = Time.deltaTime / HoursPerDay;
+            newRotation = rotationTime * RotationVector * _SpeedConstant;
+        }
 
         // Finally, transform the object using the rotationCalculated vector.
-        transform.Rotate(rotationCalculated);
+        transform.Rotate(newRotation);
     }
 }

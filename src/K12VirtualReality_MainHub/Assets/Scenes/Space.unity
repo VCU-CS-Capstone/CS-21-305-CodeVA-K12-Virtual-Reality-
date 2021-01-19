@@ -451,7 +451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fda059e934c06fa4c8847c7e3eb53be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Center: {x: 0, y: 0, z: 0}
   DaysPerRevolution: 90600
   Radius: 22107
   ZWidth: 1.2
@@ -3309,6 +3308,8 @@ GameObject:
   - component: {fileID: 892929068}
   - component: {fileID: 892929067}
   - component: {fileID: 892929066}
+  - component: {fileID: 892929069}
+  - component: {fileID: 892929070}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -3390,6 +3391,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892929064}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &892929069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892929064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8edf24ba337a0aa4384dcdab214bcf39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DaysPerYear: 27.3
+  ObjectToRevolveAround: {fileID: 690273532}
+--- !u!114 &892929070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892929064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a0c505429570e469aac84e43ab41d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotationVector: {x: 0, y: -1, z: 0}
+  HoursPerDay: 27.3
 --- !u!1 &918027256
 GameObject:
   m_ObjectHideFlags: 0
