@@ -39,4 +39,4 @@ it provides a good baseline to start making our changes.
 
 8. You can now create the remaining PanelTopRight, PanelBottomLeft, and PanelBottomRight game objects by right-clicking the PanelTopLeft game object, duplicating it, and changing the name, position, rotation, and text as needed. You shouldn't need to alter many values to make these changes. If you get lost, you can always deleted the duplicated game object and start again.
 
-9. The last panel to add is the fun facts. Again duplicate the PanelTopLeft game object and rename it to PanelFunFacts. Change the position, rotation, and text 
+9. The last panel to add is the fun facts. Again duplicate the PanelTopLeft game object and rename it to PanelFunFacts. Change the position, rotation, and text size and content to provide fun facts about your planet. Hint: We duplicated the text child here to have one be the heading and the other be the facts themselves.
