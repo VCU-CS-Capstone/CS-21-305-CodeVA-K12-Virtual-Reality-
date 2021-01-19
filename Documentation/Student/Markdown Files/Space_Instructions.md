@@ -1,6 +1,6 @@
 # Directions for Space scene
 
-# NOTICE** This section assumes you have fully completed the Setup Instructions.
+## __NOTICE: This section assumes you have fully completed the Setup Instructions.__
 
 ## Getting Started
 
@@ -147,16 +147,6 @@ Now all you need to do is save your rings as a .blend file into the Assets direc
 Once it is in unity, you can click and drag the file into the Scene and your rings should show up! You may have to rotate it and scale it to see the side that is visible though!
 
 ![Unity_Sun_Rings](Screenshots/Space/Unity_Sun_Rings.png "Rings shown in the editor")
-
-# Adding VR
-
-One more thing we have to do in order for our project to run on a Google Cardboard VR Device! We need to change our Main Camera to an XR Rig from Google. Luckily the google cardboard plugin allows us to do that very easily. All we have to do is right click our Main Camera, select XR and Convert!
-
-This is your new XR Rig, so feel free to set the position, rotation and scale of the Rig to whatever fits your needs.
-
-If you need to edit the Camera directly then you can still do so, it is under the XR Rig in the Hierarchy. But only do this if you REALLY need to, editing the camera and not the rig can cause things to get messed up! (i.e. setting the position/rotation for the camera inside the rig will cause the rig to do some weird unwanted behavior)
-
-![XRRig](Screenshots/Space/XRRig.png "XR Rig from google")
 
 # Where to go from here?
 
