@@ -157,3 +157,18 @@
 - Work on documentation for various things 
 ### Issues
 - N/A
+
+
+# Spring Semester
+
+## Week One
+
+### Tasks
+- Get random objects to instantiate at designated location 
+- Start the purchasing process for the Unity Asset Store assets once we know which route to take
+### Accomplishments
+- Met with Mr. Shank and decided what project we're going to start next
+- Researched and located assets to use for stage environment / music instruments 
+- Researched how to instantiate a random gameobject (instrument) from a set of gameobjects (all the instruments) at a certain location
+### Issues
+- To have VCU buy the assets or reimburse us
