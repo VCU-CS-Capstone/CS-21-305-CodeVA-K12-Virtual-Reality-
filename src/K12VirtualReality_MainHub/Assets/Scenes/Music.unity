@@ -773,10 +773,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b31ed423d025f498f43d15d87640e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnees:
+  - {fileID: 5643368773412706654, guid: 5bc27932e71ad1d41b84bcad06cb3555, type: 3}
+  - {fileID: 8532979735253243034, guid: 73080afb80aaa204682162b11b1848bb, type: 3}
+  - {fileID: 2007151288037505881, guid: 8de020676b7c7f2498658e3b91fe49f2, type: 3}
+  - {fileID: 660284091649729710, guid: 9546d834489ee55498e9d2d29cf2d6c8, type: 3}
+  - {fileID: 2496164933856394435, guid: 9430073ed18b3cc478cce066e498ae5e, type: 3}
+  - {fileID: 8678425648873363909, guid: 1fb78f2eeb37eed44b8c95a6b333e66e, type: 3}
+  - {fileID: 8869694675699332613, guid: 4cc5c1d6595e52b468c2cd689d404441, type: 3}
   spawnPosition1: {fileID: 1149653978}
   spawnPosition2: {fileID: 1476900260}
   spawnPosition3: {fileID: 1934855984}
-  spawnee: {fileID: 8532979735253243034, guid: 73080afb80aaa204682162b11b1848bb, type: 3}
 --- !u!4 &1621590417
 Transform:
   m_ObjectHideFlags: 0
