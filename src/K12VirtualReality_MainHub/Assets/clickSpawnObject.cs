@@ -14,6 +14,8 @@ public class clickSpawnObject : MonoBehaviour {
     int randomInt2;
     int randomInt3;
 
+    
+
     // Update is called once per frame
     void Update() {
         if(Input.GetKeyDown(KeyCode.Mouse0)) {
@@ -23,17 +25,22 @@ public class clickSpawnObject : MonoBehaviour {
 
     void spawnRandom() {
 
+    	int flag = 0;
+
     	randomInt1 = Random.Range(0, spawnees.Length);
-    	randomInt2 = Random.Range(0, spawnees.Length);
-    	if (randomInt2 == randomInt1) {
-    		while (randomInt2 == randomInt1) {
-    			randomInt2 = Random.Range(0, spawnees.Length);
+    	while (flag == 0) {
+    		randomInt2 = Random.Range(0, spawnees.Length);
+    		if (randomInt2 != randomInt1) {
+    			flag = 1;
     		}
     	}
-    	randomInt3 = Random.Range(0, spawnees.Length);
-    	if ((randomInt3 == randomInt1) || (randomInt3 == randomInt2)) {
-    		while ((randomInt3 == randomInt1) || (randomInt3 == randomInt2)) {
-    			randomInt2 = Random.Range(0, spawnees.Length);
+    	
+    	flag = 0;
+
+    	while (flag == 0) {
+    		randomInt3 = Random.Range(0, spawnees.Length);
+    		if ((randomInt3 != randomInt1) && (randomInt3 != randomInt2)) {
+    			flag = 1;
     		}
     	}
 
