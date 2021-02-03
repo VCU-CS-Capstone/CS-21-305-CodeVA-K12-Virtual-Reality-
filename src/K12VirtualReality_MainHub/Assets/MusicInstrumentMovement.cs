@@ -13,7 +13,7 @@ public class MusicInstrumentMovement : MonoBehaviour
 
     private GameObject[] instruments;
 
-    private Vector3[] posOffsets;
+    private Vector3[] posOffsets; 
     private Vector3[] tempPositions;
 
     // Start is called before the first frame update
