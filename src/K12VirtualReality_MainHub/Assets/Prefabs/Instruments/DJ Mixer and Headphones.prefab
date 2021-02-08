@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2551950485658726093}
   - component: {fileID: 2551950485658726092}
+  - component: {fileID: 8953720019642781386}
   m_Layer: 0
   m_Name: DJ Mixer and Headphones
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2551950485658726099}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -2, y: 2, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2551950485968531680}
@@ -44,6 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3f4ea7fbd055945bc3157c2cf7e2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8953720019642781386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2551950485658726099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
 --- !u!1 &2551950485968531687
 GameObject:
   m_ObjectHideFlags: 0
@@ -54,7 +68,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2551950485968531680}
   - component: {fileID: 2551950485968531683}
-  - component: {fileID: 2551950485968531682}
   - component: {fileID: 2551950485968531681}
   m_Layer: 0
   m_Name: Mixer and Headphones
@@ -71,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2551950485968531687}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 488058837750454666}
@@ -95,19 +108,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2551950485968531682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2551950485968531687}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 10
 --- !u!114 &2551950485968531681
 MonoBehaviour:
   m_ObjectHideFlags: 0

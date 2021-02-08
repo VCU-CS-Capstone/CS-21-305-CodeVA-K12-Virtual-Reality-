@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3499675078197971905}
   - component: {fileID: 7182641734899005240}
   - component: {fileID: -3959656360666272008}
-  - component: {fileID: -7404752488371608776}
   - component: {fileID: 5772514278382874913}
   m_Layer: 0
   m_Name: Chimes_01
@@ -98,19 +97,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-7404752488371608776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8903907382654845924}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 10
 --- !u!114 &5772514278382874913
 MonoBehaviour:
   m_ObjectHideFlags: 0

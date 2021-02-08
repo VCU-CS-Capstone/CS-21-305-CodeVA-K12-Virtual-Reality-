@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 48197382794914716}
   - component: {fileID: 6023478915330463589}
   - component: {fileID: -6928419089179745577}
-  - component: {fileID: 4849515524588407637}
   - component: {fileID: -4796386812808512602}
   m_Layer: 0
   m_Name: Clarinet_01
@@ -98,19 +97,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4849515524588407637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5452561881015378873}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 10
 --- !u!114 &-4796386812808512602
 MonoBehaviour:
   m_ObjectHideFlags: 0

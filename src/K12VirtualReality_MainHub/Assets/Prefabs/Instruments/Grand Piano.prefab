@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1457686493956829537}
   - component: {fileID: 1457686493956829536}
+  - component: {fileID: 4122198937672743834}
   m_Layer: 0
   m_Name: Grand Piano
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457686493956829539}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -2, y: 2, z: 4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8133989549654716511}
@@ -44,6 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3f4ea7fbd055945bc3157c2cf7e2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4122198937672743834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457686493956829539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
 --- !u!54 &1457686494586298658
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75,19 +89,6 @@ MonoBehaviour:
   instrument: {fileID: 5096638535725630028}
   amplitude: 0.025
   frequency: 0.5
---- !u!114 &1457686494586298661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5096638535725630028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 10
 --- !u!1001 &1457686494840688007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -158,7 +159,17 @@ PrefabInstance:
     - target: {fileID: 7267404908451970520, guid: 9c480f33f6b037b4aac1b07f0bfc89ad,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267404908451970520, guid: 9c480f33f6b037b4aac1b07f0bfc89ad,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7267404908451970520, guid: 9c480f33f6b037b4aac1b07f0bfc89ad,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c480f33f6b037b4aac1b07f0bfc89ad, type: 3}

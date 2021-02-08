@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3697931112248634757}
   - component: {fileID: 6948273203512480124}
   - component: {fileID: -5689183989214887908}
-  - component: {fileID: -3675143317045332771}
   - component: {fileID: -889402222878231902}
   m_Layer: 0
   m_Name: Gong_01
@@ -98,19 +97,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-3675143317045332771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8669974258004796832}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 10
 --- !u!114 &-889402222878231902
 MonoBehaviour:
   m_ObjectHideFlags: 0

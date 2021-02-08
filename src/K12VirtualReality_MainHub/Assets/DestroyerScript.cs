@@ -14,15 +14,6 @@ public class DestroyerScript : MonoBehaviour {
         		Destruction();
         	}
         }
-        if (this.transform.position.y <= -20) {
-        	Destruction();
-        }
-    }
-
-    void OnCollisionEnter(Collision coll) {
-    	if (coll.gameObject.name == "Destroyer") {
-    		Destruction();
-    	}
     }
 
     void Destruction() {

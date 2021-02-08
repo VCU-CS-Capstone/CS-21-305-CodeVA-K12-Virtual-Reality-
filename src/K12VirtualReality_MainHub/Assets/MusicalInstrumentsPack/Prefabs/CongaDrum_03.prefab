@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3025535345881335716}
   - component: {fileID: 8845163361632959325}
   - component: {fileID: -1528080329900845200}
-  - component: {fileID: -9094067389716331351}
   - component: {fileID: -121090584264806354}
   m_Layer: 0
   m_Name: CongaDrum_03
@@ -98,19 +97,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-9094067389716331351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7132720195046248321}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 10
 --- !u!114 &-121090584264806354
 MonoBehaviour:
   m_ObjectHideFlags: 0

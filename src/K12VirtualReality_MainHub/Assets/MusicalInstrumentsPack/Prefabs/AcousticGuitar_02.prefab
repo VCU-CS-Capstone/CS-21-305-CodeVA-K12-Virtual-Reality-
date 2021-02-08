@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6552976978467658006}
   - component: {fileID: 706028014037329391}
   - component: {fileID: 728487291276553077}
-  - component: {fileID: -9093269052005652839}
   - component: {fileID: -769774347562112254}
   m_Layer: 0
   m_Name: AcousticGuitar_02
@@ -98,19 +97,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-9093269052005652839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292681184731025715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 5
 --- !u!114 &-769774347562112254
 MonoBehaviour:
   m_ObjectHideFlags: 0
