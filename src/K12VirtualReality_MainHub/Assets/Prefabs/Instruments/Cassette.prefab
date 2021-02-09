@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6988000130921763826}
   - component: {fileID: -2182404373310026605}
   m_Layer: 0
-  m_Name: Casette
+  m_Name: Cassette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ PrefabInstance:
     - target: {fileID: 8435426282234110353, guid: 1238f08bcd6a89b40b509cd70753f4c3,
         type: 3}
       propertyPath: m_Name
-      value: Casette_01
+      value: Cassette_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1238f08bcd6a89b40b509cd70753f4c3, type: 3}
