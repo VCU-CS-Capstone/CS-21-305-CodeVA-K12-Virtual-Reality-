@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2819172068992409175}
   - component: {fileID: 8685941170618924377}
+  - component: {fileID: 3578623166935678163}
   m_Layer: 0
   m_Name: Saxophone
   m_TagString: Untagged
@@ -44,6 +45,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3f4ea7fbd055945bc3157c2cf7e2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3578623166935678163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3779931458243443144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
 --- !u!54 &2655737627608968679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -95,7 +109,7 @@ PrefabInstance:
     - target: {fileID: 3147976862958966462, guid: d8d2a0e62205c5f4cac9197da8a60709,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3147976862958966462, guid: d8d2a0e62205c5f4cac9197da8a60709,
         type: 3}
@@ -141,6 +155,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147976862958966462, guid: d8d2a0e62205c5f4cac9197da8a60709,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147976862958966462, guid: d8d2a0e62205c5f4cac9197da8a60709,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3147976862958966462, guid: d8d2a0e62205c5f4cac9197da8a60709,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8d2a0e62205c5f4cac9197da8a60709, type: 3}

@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3862979874061550433}
   - component: {fileID: 832479410920816485}
+  - component: {fileID: 551089764000956886}
   m_Layer: 0
   m_Name: Lute
   m_TagString: Untagged
@@ -75,6 +76,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3f4ea7fbd055945bc3157c2cf7e2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &551089764000956886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034553554696361902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 5
 --- !u!1001 &3641319970810949720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,7 +109,7 @@ PrefabInstance:
     - target: {fileID: 7257686809202828567, guid: 486ae8f95e0606344979cf3c93a3883b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7257686809202828567, guid: 486ae8f95e0606344979cf3c93a3883b,
         type: 3}
