@@ -172,3 +172,20 @@
 - Researched how to instantiate a random gameobject (instrument) from a set of gameobjects (all the instruments) at a certain location
 ### Issues
 - To have VCU buy the assets or reimburse us
+
+## Week Two
+
+### Tasks
+- Push all new assets to dev branch
+- Shank wants instruments to be removed from array after spawn; implement that logic and make sure total number of instruments is divisible by 3
+- Add some in game buttons for testing 
+- Look for / fix any possible issues and bugs in previous code
+### Accomplishments
+- Created script that spawns three random objects at designated locations from a script
+- Created a new script that destroys objects after a certain time limit (for testing)
+- Added Jacob's script to game objects
+- Purchased all assets 
+- Set up the auditorium environment for use
+- Create new prefabs of all instruments so they use spawn script, destroy script, movement script, are detectable, and always face the camera
+### Issues
+- N/A
