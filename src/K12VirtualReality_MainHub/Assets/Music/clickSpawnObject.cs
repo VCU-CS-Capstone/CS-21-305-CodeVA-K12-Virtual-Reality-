@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class clickSpawnObject : MonoBehaviour {
 
@@ -25,6 +26,9 @@ public class clickSpawnObject : MonoBehaviour {
     }
 
     void spawnRandom() {
+
+    	// This is not the best way to do this, but it is fine for our project
+    	spawnees = spawnees.OrderBy(x => Random.value).ToList();
 
     	if (spawnees.Count == 3) {
     		Instantiate(spawnees[0], spawnPosition1.position, spawnPosition1.rotation);
