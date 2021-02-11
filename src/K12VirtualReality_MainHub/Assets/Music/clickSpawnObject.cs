@@ -36,6 +36,20 @@ public class clickSpawnObject : MonoBehaviour {
 
     	}
 
+    	else if (spawnees.Count == 2) {
+    		Instantiate(spawnees[0], spawnPosition1.position, spawnPosition1.rotation);
+	   		Instantiate(spawnees[1], spawnPosition2.position, spawnPosition2.rotation);
+	   		spawnees.RemoveAt(1);
+	   		spawnees.RemoveAt(0);
+
+    	}
+
+    	else if (spawnees.Count == 1) {
+    		Instantiate(spawnees[0], spawnPosition1.position, spawnPosition1.rotation);
+	   		spawnees.RemoveAt(0);
+
+    	}
+
     	else if (spawnees.Count > 3) {
 	    	int flag = 0;
 
