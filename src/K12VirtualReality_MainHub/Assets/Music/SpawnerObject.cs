@@ -3,144 +3,94 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+
 public class SpawnerObject : MonoBehaviour {
 
-	//public GameObject[] spawnees;
+	// Get spawnees and positions dynamically from Unity
     public List<GameObject> spawnees;
+    public List<Transform> spawnPositions;
+
+    // Array to be populated with unaltered instrument list as copy
 	private GameObject[] spawneesCopy;
 
-    public Transform spawnPosition1;
-    public Transform spawnPosition2;
-    public Transform spawnPosition3;
+	// Constant int to represent the three spawn positions on stage to prevent hardcoding numbers
+	const int numSpawnPositions = 3;
 
-    int randomInt1;
-    int randomInt2;
-    int randomInt3;
 
-	void Start()
-    {
+	// Use this for initialization
+	void Start() {
+
+		// Make an array copy of spawnees list
 		spawneesCopy = spawnees.ToArray();
+
     }
     
 
     // Update is called once per frame
     void Update() {
-		List<GameObject> instruments = new List<GameObject>(spawnees.ToArray());
 
+    	// Left click
         if(Input.GetKeyDown(KeyCode.Mouse0)) {
-        	spawnRandom();
+        	spawnRandomFinite();
         }
-		else if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
+
+        // Right click
+		else if (Input.GetKeyDown(KeyCode.Mouse1)) {
 			spawnNewRandom();
         }
+
     }
 
+
 	// Jacob Pseudo code
-	void spawnNewRandom()
-    {
+	void spawnNewRandom() {
+
+		// In number of instruments remaining is lass than three 
+		if (spawnees.Count < numSpawnPositions) {
+			spawnees = new List<GameObject>(spawneesCopy);
+		}
+
 		// Shuffle the instruments.
 		spawnees = spawnees.OrderBy(x => Random.value).ToList();
 
-		if (spawnees.Count < 3)
-		{
-			spawnees = new List<GameObject>(spawneesCopy);
-		}
+		// Use numSpawnPositions variable as limit to spawn in three instruments
+		for (int i = 0; i < numSpawnPositions; i++) {
 
-		Instantiate(spawnees[0], spawnPosition1.position, spawnPosition1.rotation);
-		Instantiate(spawnees[1], spawnPosition2.position, spawnPosition2.rotation);
-		Instantiate(spawnees[2], spawnPosition3.position, spawnPosition3.rotation);
-
-		spawnees.RemoveAt(0);
-		spawnees.RemoveAt(1);
-		spawnees.RemoveAt(2);
+				// Spawn instrument and remove from spawnees list
+    			Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation);
+    			spawnees.RemoveAt(0);
+    	}
 	}
 
-    void spawnRandom() {
 
-    	// This is not the best way to do this, but it is fine for our project
+    void spawnRandomFinite() {
+
+    	// Shuffle the instruments.
     	spawnees = spawnees.OrderBy(x => Random.value).ToList();
 
-		// If only three instruments are left
-    	if (spawnees.Count == 3)
-		{
-    		Instantiate(spawnees[0], spawnPosition1.position, spawnPosition1.rotation);
-	   		Instantiate(spawnees[1], spawnPosition2.position, spawnPosition2.rotation);
-	   		Instantiate(spawnees[2], spawnPosition3.position, spawnPosition3.rotation);
-	   		spawnees.RemoveAt(2);
-	   		spawnees.RemoveAt(1);
-	   		spawnees.RemoveAt(0);
+
+    	// If three or less instruments remain, use spawnees.Count variable as limit to spawn in remaining instruments
+    	if (spawnees.Count <= numSpawnPositions) {
+    		for (int i = 0; i < spawnees.Count; i++) {
+
+    			// Spawn instrument and remove from spawnees list
+    			Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation);
+    			spawnees.RemoveAt(0);
+    		}
     	}
-		// If only two instruments are left
-    	else if (spawnees.Count == 2)
-		{
-			spawnees = new List<GameObject>(spawneesCopy);
-    		Instantiate(spawnees[0], spawnPosition1.position, spawnPosition1.rotation);
-	   		Instantiate(spawnees[1], spawnPosition2.position, spawnPosition2.rotation);
-	   		spawnees.RemoveAt(1);
-	   		spawnees.RemoveAt(0);
+		
+		// If greater than three instruments remain, use numSpawnPositions variable as limit to spawn in three instruments
+    	else if (spawnees.Count > numSpawnPositions) {
+	   		for (int i = 0; i < numSpawnPositions; i++) {
 
-		}
-		// If only one instrument is left
-    	else if (spawnees.Count == 1)
-		{
-    		Instantiate(spawnees[0], spawnPosition1.position, spawnPosition1.rotation);
-	   		spawnees.RemoveAt(0);
-
-    	}
-		// If there are more than 3 instruments left
-    	else if (spawnees.Count > 3)
-		{
-	    	int flag = 0;
-
-
-	   		randomInt1 = Random.Range(0, (spawnees.Count - 1));
-	   		while (flag == 0)
-			{
-    			randomInt2 = Random.Range(0, (spawnees.Count - 1));
-    			if (randomInt2 != randomInt1)
-				{
-	    			flag = 1;
-	   			}
-	   		}
-	    	
-	   		flag = 0;
-
-	   		while (flag == 0)
-			{
-	   			randomInt3 = Random.Range(0, (spawnees.Count - 1));
-	   			if ((randomInt3 != randomInt1) && (randomInt3 != randomInt2))
-				{
-	   				flag = 1;
-	   			}
+	   			// Spawn instrument and remove from spawnees list
+    			Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation);
+    			spawnees.RemoveAt(0);
     		}
-
-
-	   		Instantiate(spawnees[randomInt1], spawnPosition1.position, spawnPosition1.rotation);
-	   		Instantiate(spawnees[randomInt2], spawnPosition2.position, spawnPosition2.rotation);
-	   		Instantiate(spawnees[randomInt3], spawnPosition3.position, spawnPosition3.rotation);
-
-	   		if (randomInt1 < randomInt2)
-			{
-    			randomInt2 = randomInt2 - 1;
-    		}
-	   		if (randomInt1 < randomInt3)
-			{
-	   			randomInt3 = randomInt3 - 1;
-	   		}
-
-
-	   		if (randomInt2 < randomInt3)
-			{
-	   			randomInt3 = randomInt3 - 1;
-    		}
-
-	   		spawnees.RemoveAt(randomInt1);
-    		spawnees.RemoveAt(randomInt2);
-	   		spawnees.RemoveAt(randomInt3);
 	    }
-		else
-        {
+
+	    // If list is empty, return
+		else {
 			return;
         }
     }
