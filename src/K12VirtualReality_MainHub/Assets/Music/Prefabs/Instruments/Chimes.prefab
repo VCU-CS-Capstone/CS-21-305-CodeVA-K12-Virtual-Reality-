@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2006245181412402968}
   - component: {fileID: 2006245181412402969}
-  - component: {fileID: -3476746176860405632}
   m_Layer: 0
   m_Name: Chimes
   m_TagString: Untagged
@@ -30,6 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6205340242430214347}
+  - {fileID: 1395307856316801486}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -45,19 +45,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3f4ea7fbd055945bc3157c2cf7e2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-3476746176860405632
+--- !u!1 &3844836794074060223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1395307856316801486}
+  - component: {fileID: 2406568638262753214}
+  m_Layer: 0
+  m_Name: selectObjectScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1395307856316801486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844836794074060223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2006245181412402968}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2406568638262753214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006245181412402970}
+  m_GameObject: {fileID: 3844836794074060223}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 5
+  objectToDestroy: {fileID: 2006245181412402970}
+--- !u!64 &4907331605461434297
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6937396972234715864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7102221854673920710, guid: 6b82c0ac46a6a7d47b4bb0e06e8955d5, type: 3}
+--- !u!114 &7643131517730380691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6937396972234715864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2406568638262753214}
+          m_MethodName: Destruction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &2006245180230168892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137,6 +210,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eba230e22069c084ca6260095f2179db, type: 3}
+--- !u!1 &6937396972234715864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8903907382654845924, guid: eba230e22069c084ca6260095f2179db,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006245180230168892}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6205340242430214347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5605382082194321911, guid: eba230e22069c084ca6260095f2179db,

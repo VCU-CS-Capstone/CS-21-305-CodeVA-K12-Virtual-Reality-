@@ -3,20 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyerScript : MonoBehaviour {
+
+    public GameObject objectToDestroy;
     
-    public float lifeTime = 10.0f;
-
-    // Update is called once per frame
-    void Update() {
-        if (lifeTime > 0) {
-        	lifeTime -= Time.deltaTime;
-        	if (lifeTime <= 0) {
-        		Destruction();
-        	}
-        }
+    public void Destruction() {
+    	Destroy(objectToDestroy);
     }
 
-    void Destruction() {
-    	Destroy(this.gameObject);
-    }
 }

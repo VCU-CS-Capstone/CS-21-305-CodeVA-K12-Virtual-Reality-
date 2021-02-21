@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &6984810099118602119
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260226677058454628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2815157088149261343, guid: 6514df1eb8a2d8b42888e2b36371a142, type: 3}
+--- !u!64 &6718070065262202132
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6260226677178919394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2815157088149261343, guid: 6514df1eb8a2d8b42888e2b36371a142, type: 3}
 --- !u!1 &8330966985711939453
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,8 +37,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8330966985711939452}
-  - component: {fileID: 8330966985711939329}
   - component: {fileID: 8330966985711939455}
+  - component: {fileID: 6232359179145251204}
   m_Layer: 0
   m_Name: 2 Cymbals
   m_TagString: Untagged
@@ -34,22 +62,6 @@ Transform:
   m_Father: {fileID: 8330966987054471881}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &8330966985711939329
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8330966985711939453}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &8330966985711939455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +77,34 @@ MonoBehaviour:
   instrument: {fileID: 8330966985711939453}
   amplitude: 0.025
   frequency: 0.5
+--- !u!114 &6232359179145251204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8330966985711939453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2344570675739382021}
+          m_MethodName: Destruction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8330966987054471879
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8330966987054471881}
   - component: {fileID: 8330966987054471878}
-  - component: {fileID: 2757358769698499638}
   m_Layer: 0
   m_Name: Cymbal
   m_TagString: Untagged
@@ -95,6 +134,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8330966985711939452}
+  - {fileID: 4449780859007812831}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -110,19 +150,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3f4ea7fbd055945bc3157c2cf7e2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2757358769698499638
+--- !u!1 &8462464789059488359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4449780859007812831}
+  - component: {fileID: 2344570675739382021}
+  m_Layer: 0
+  m_Name: selectObjectScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4449780859007812831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8462464789059488359}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8330966987054471881}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2344570675739382021
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8330966987054471879}
+  m_GameObject: {fileID: 8462464789059488359}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b60bc2f1707e1ec4f89ee2b528ad1b67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 5
+  objectToDestroy: {fileID: 8330966987054471879}
 --- !u!1001 &8330966986639299006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -192,6 +263,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59cd6e30fa5b76a459864068974b4052, type: 3}
+--- !u!1 &6260226677058454628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2701386456309044698, guid: 59cd6e30fa5b76a459864068974b4052,
+    type: 3}
+  m_PrefabInstance: {fileID: 8330966986639299006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6970326640994334327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1379818319943362505, guid: 59cd6e30fa5b76a459864068974b4052,
@@ -267,6 +344,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59cd6e30fa5b76a459864068974b4052, type: 3}
+--- !u!1 &6260226677178919394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2701386456309044698, guid: 59cd6e30fa5b76a459864068974b4052,
+    type: 3}
+  m_PrefabInstance: {fileID: 8330966986804067384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6970326640865483761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1379818319943362505, guid: 59cd6e30fa5b76a459864068974b4052,

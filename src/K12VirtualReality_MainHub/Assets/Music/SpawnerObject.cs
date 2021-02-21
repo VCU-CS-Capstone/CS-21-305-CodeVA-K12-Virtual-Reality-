@@ -26,7 +26,7 @@ public class SpawnerObject : MonoBehaviour {
     }
     
 
-    // Update is called once per frame
+    /* // Update is called once per frame
     void Update() {
 
     	// Left click
@@ -36,14 +36,14 @@ public class SpawnerObject : MonoBehaviour {
 
         // Right click
 		else if (Input.GetKeyDown(KeyCode.Mouse1)) {
-			spawnNewRandom();
+			spawnRandomInfinite();
         }
 
-    }
+    } */
 
 
 	// Jacob Pseudo code
-	void spawnNewRandom() {
+	public void spawnRandomInfinite() {
 
 		// In number of instruments remaining is lass than three 
 		if (spawnees.Count < numSpawnPositions) {
@@ -63,7 +63,7 @@ public class SpawnerObject : MonoBehaviour {
 	}
 
 
-    void spawnRandomFinite() {
+    public void spawnRandomFinite() {
 
     	// Shuffle the instruments.
     	spawnees = spawnees.OrderBy(x => Random.value).ToList();
