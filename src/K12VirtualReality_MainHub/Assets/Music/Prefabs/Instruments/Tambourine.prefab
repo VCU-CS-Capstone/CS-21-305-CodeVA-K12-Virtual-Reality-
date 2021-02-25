@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6229261111554177150}
   m_Layer: 0
   m_Name: Tambourine
-  m_TagString: Untagged
+  m_TagString: Instrument
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,21 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b3f4ea7fbd055945bc3157c2cf7e2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5856819841624677443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4631219405703541431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7daff0ecd6f321f4ca8d40564bff38cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instrument: {fileID: 4631219405703541431}
-  amplitude: 0.025
-  frequency: 0.5
 --- !u!64 &4992564517665578346
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -102,6 +87,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &5856819841624677443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631219405703541431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7daff0ecd6f321f4ca8d40564bff38cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrument: {fileID: 4631219405703541431}
+  amplitude: 0.025
+  frequency: 0.5
 --- !u!1 &8044390673803977705
 GameObject:
   m_ObjectHideFlags: 0

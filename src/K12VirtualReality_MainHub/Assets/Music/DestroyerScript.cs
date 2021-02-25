@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class DestroyerScript : MonoBehaviour {
 
-    public GameObject objectToDestroy;
-    
-    public void Destruction() {
-    	Destroy(objectToDestroy);
-    }
+	GameObject[] InstrumentsToDestroy;
+	    
+	public void Destruction (){
+    	
+    	InstrumentsToDestroy = GameObject.FindGameObjectsWithTag("Instrument");
 
+    	foreach(GameObject instrument in  InstrumentsToDestroy) {
+    		Destroy(instrument);
+    	}
+    
+	}
 }

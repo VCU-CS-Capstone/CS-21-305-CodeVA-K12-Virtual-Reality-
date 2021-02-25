@@ -44,6 +44,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 8707218861344629160}
+--- !u!64 &2584361089350025449
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6616140862612020522}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6093593625004405733, guid: b57545606c5df794586c4340ce3d4d9a, type: 3}
 --- !u!114 &2535814012766994882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,20 +73,6 @@ MonoBehaviour:
   instrument: {fileID: 6616140862612020522}
   amplitude: 0.025
   frequency: 0.5
---- !u!64 &2584361089350025449
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6616140862612020522}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6093593625004405733, guid: b57545606c5df794586c4340ce3d4d9a, type: 3}
 --- !u!114 &9156897981294485172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 7724848299691952694}
   m_Layer: 0
   m_Name: Zurna
-  m_TagString: Untagged
+  m_TagString: Instrument
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

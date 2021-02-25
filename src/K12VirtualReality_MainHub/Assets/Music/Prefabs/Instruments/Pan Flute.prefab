@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9111610569630555028}
   m_Layer: 0
   m_Name: Pan Flute
-  m_TagString: Untagged
+  m_TagString: Instrument
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,21 +89,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 3520091716065696026}
---- !u!114 &8602039372699433720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6990418801580267497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7daff0ecd6f321f4ca8d40564bff38cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instrument: {fileID: 6990418801580267497}
-  amplitude: 0.025
-  frequency: 0.5
 --- !u!64 &8385237787024855082
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -146,6 +131,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &8602039372699433720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6990418801580267497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7daff0ecd6f321f4ca8d40564bff38cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instrument: {fileID: 6990418801580267497}
+  amplitude: 0.025
+  frequency: 0.5
 --- !u!1001 &2156928092652785147
 PrefabInstance:
   m_ObjectHideFlags: 0
