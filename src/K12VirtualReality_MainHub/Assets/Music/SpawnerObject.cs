@@ -9,6 +9,10 @@ public class SpawnerObject : MonoBehaviour {
 	// Get spawnees and positions dynamically from Unity
     public List<GameObject> spawnees;
     public List<Transform> spawnPositions;
+    public GameObject[] cache;
+    public TMPro.TextMeshProUGUI scoreboardText;
+    private int score;
+    private int correctInstrument;
 
     // Array to be populated with unaltered instrument list as copy
 	private GameObject[] spawneesCopy;
@@ -23,24 +27,23 @@ public class SpawnerObject : MonoBehaviour {
 		// Make an array copy of spawnees list
 		spawneesCopy = spawnees.ToArray();
 
+        cache = new GameObject[3];
+        score = 0;
+        scoreboardText.text = $"Score: {score}";
     }
     
-
-    /* // Update is called once per frame
-    void Update() {
-
-    	// Left click
-        if(Input.GetKeyDown(KeyCode.Mouse0)) {
-        	spawnRandomFinite();
+    public void Clear(int value)
+    {
+        for(int i = 0; i < cache.Length; i++)
+        {
+            Destroy(cache[i]);
+            cache[i] = null;
         }
-
-        // Right click
-		else if (Input.GetKeyDown(KeyCode.Mouse1)) {
-			spawnRandomInfinite();
+        if(value == correctInstrument)
+        {
+            scoreboardText.text = $"Score: {++score}";
         }
-
-    } */
-
+    }
 
 	// Jacob Pseudo code
 	public void spawnRandomInfinite() {
@@ -57,9 +60,11 @@ public class SpawnerObject : MonoBehaviour {
 		for (int i = 0; i < numSpawnPositions; i++) {
 
 				// Spawn instrument and remove from spawnees list
-    			Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation);
+    			cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
     			spawnees.RemoveAt(0);
     	}
+
+        correctInstrument = (int)Random.Range(0, 2);
 	}
 
 
@@ -74,7 +79,7 @@ public class SpawnerObject : MonoBehaviour {
     		for (int i = 0; i < spawnees.Count; i++) {
 
     			// Spawn instrument and remove from spawnees list
-    			Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation);
+    			cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
     			spawnees.RemoveAt(0);
     		}
     	}
@@ -84,7 +89,7 @@ public class SpawnerObject : MonoBehaviour {
 	   		for (int i = 0; i < numSpawnPositions; i++) {
 
 	   			// Spawn instrument and remove from spawnees list
-    			Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation);
+    			cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
     			spawnees.RemoveAt(0);
     		}
 	    }
@@ -93,6 +98,8 @@ public class SpawnerObject : MonoBehaviour {
 		else {
 			return;
         }
+
+        correctInstrument = (int)Random.Range(0, 2);
     }
 
 }
