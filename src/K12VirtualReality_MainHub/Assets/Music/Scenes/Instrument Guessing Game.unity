@@ -5754,6 +5754,11 @@ MonoBehaviour:
   - {fileID: 990273925}
   cache: []
   scoreboardText: {fileID: 1020094051}
+  audioSources:
+  - {fileID: 1169753855}
+  - {fileID: 313001803}
+  - {fileID: 510739190}
+  - {fileID: 1077223671}
 --- !u!4 &2041658018
 Transform:
   m_ObjectHideFlags: 0
