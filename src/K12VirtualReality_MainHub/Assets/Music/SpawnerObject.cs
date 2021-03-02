@@ -11,6 +11,8 @@ public class SpawnerObject : MonoBehaviour {
     public List<Transform> spawnPositions;
     public GameObject[] cache;
     public TMPro.TextMeshProUGUI scoreboardText;
+    public List<AudioSource> audioSources;
+
     private int score;
     private int correctInstrument;
 
@@ -31,6 +33,24 @@ public class SpawnerObject : MonoBehaviour {
         score = 0;
         scoreboardText.text = $"Score: {score}";
     }
+
+    private float timeRemaining = 10.0f;
+
+    void Update()
+    {
+        if (correctInstrument != -1)
+        {
+            if (timeRemaining > 0.0f) timeRemaining -= Time.deltaTime;
+            else
+            {
+                timeRemaining = 10.0f;
+                audioSources[0].Play();
+                audioSources[1].Play();
+                audioSources[2].Play();
+                audioSources[3].Play();
+            }
+        }
+    }
     
     public void Clear(int value)
     {
@@ -43,6 +63,8 @@ public class SpawnerObject : MonoBehaviour {
         {
             scoreboardText.text = $"Score: {++score}";
         }
+
+        correctInstrument = -1;
     }
 
 	// Jacob Pseudo code
@@ -53,25 +75,28 @@ public class SpawnerObject : MonoBehaviour {
 			spawnees = new List<GameObject>(spawneesCopy);
 		}
 
-		// Shuffle the instruments.
-		spawnees = spawnees.OrderBy(x => Random.value).ToList();
+        // Shuffle the instruments.
+        ShuffleInstruments();
 
 		// Use numSpawnPositions variable as limit to spawn in three instruments
 		for (int i = 0; i < numSpawnPositions; i++) {
 
-				// Spawn instrument and remove from spawnees list
-    			cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
-    			spawnees.RemoveAt(0);
+		    // Spawn instrument and remove from spawnees list
+            GameObject g = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
+            cache[i] = g;
+
+    		spawnees.RemoveAt(0);
     	}
 
-        correctInstrument = (int)Random.Range(0, 2);
+        SelectCorrectInstrument();
+        SetAudioClips(cache[correctInstrument]);
 	}
 
 
     public void spawnRandomFinite() {
 
-    	// Shuffle the instruments.
-    	spawnees = spawnees.OrderBy(x => Random.value).ToList();
+        // Shuffle the instruments.
+        ShuffleInstruments();
 
 
     	// If three or less instruments remain, use spawnees.Count variable as limit to spawn in remaining instruments
@@ -99,6 +124,27 @@ public class SpawnerObject : MonoBehaviour {
 			return;
         }
 
+        SelectCorrectInstrument();
+        SetAudioClips(cache[correctInstrument]);
+    }
+
+    private void SetAudioClips(GameObject obj)
+    {
+        Debug.Log(obj.name);
+        AudioSource a = GameObject.Find(obj.name).GetComponent<AudioSource>();
+        foreach(var auso in audioSources)
+        {
+            auso.clip = a.clip;
+        }
+    }
+
+    private void ShuffleInstruments()
+    {
+        spawnees = spawnees.OrderBy(x => Random.value).ToList();
+    }
+
+    private void SelectCorrectInstrument()
+    {
         correctInstrument = (int)Random.Range(0, 2);
     }
 
