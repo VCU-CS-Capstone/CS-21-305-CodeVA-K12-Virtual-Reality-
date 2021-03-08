@@ -34,8 +34,8 @@ public class SpawnerObject : MonoBehaviour {
         scoreboardText.text = $"Score: {score}";
     }
 
+    // Time remaining before the audio plays again.
     private float timeRemaining = 10.0f;
-
     void Update()
     {
         if (correctInstrument != -1)
@@ -54,14 +54,21 @@ public class SpawnerObject : MonoBehaviour {
     
     public void Clear(int value)
     {
+        Debug.Log(value);
         for(int i = 0; i < cache.Length; i++)
         {
             Destroy(cache[i]);
             cache[i] = null;
         }
+
         if(value == correctInstrument)
         {
             scoreboardText.text = $"Score: {++score}";
+        }
+
+        foreach(var aus in audioSources)
+        {
+            aus.clip = null;
         }
 
         correctInstrument = -1;
@@ -136,6 +143,11 @@ public class SpawnerObject : MonoBehaviour {
         {
             auso.clip = a.clip;
         }
+
+        audioSources[0].Play();
+        audioSources[1].Play();
+        audioSources[2].Play();
+        audioSources[3].Play();
     }
 
     private void ShuffleInstruments()
@@ -145,7 +157,7 @@ public class SpawnerObject : MonoBehaviour {
 
     private void SelectCorrectInstrument()
     {
-        correctInstrument = (int)Random.Range(0, 2);
+        correctInstrument = (int)Random.Range(0, 3);
     }
 
 }
