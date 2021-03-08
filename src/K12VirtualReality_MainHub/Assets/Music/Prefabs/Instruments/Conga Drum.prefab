@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 7632896214294160319}
   - component: {fileID: 2836238577117881849}
   m_Layer: 0
-  m_Name: Conga Drum 3
+  m_Name: Conga Drum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
