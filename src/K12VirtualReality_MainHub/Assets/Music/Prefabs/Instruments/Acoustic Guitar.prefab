@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 7983971171106264783}
   - component: {fileID: 1036144092989579253}
   m_Layer: 0
-  m_Name: Acoustic Guitar 1
+  m_Name: Acoustic Guitar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

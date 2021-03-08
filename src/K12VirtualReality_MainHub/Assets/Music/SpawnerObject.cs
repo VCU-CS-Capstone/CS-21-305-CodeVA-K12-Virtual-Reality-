@@ -13,6 +13,10 @@ public class SpawnerObject : MonoBehaviour {
     public TMPro.TextMeshProUGUI scoreboardText;
     public List<AudioSource> audioSources;
 
+    public TMPro.TextMeshProUGUI leftButton;
+    public TMPro.TextMeshProUGUI middleButton;
+    public TMPro.TextMeshProUGUI rightButton;
+
     private int score;
     private int correctInstrument;
 
@@ -72,6 +76,10 @@ public class SpawnerObject : MonoBehaviour {
         }
 
         correctInstrument = -1;
+
+        leftButton.text = "Select";
+        middleButton.text = "Select";
+        rightButton.text = "Select";
     }
 
 	// Jacob Pseudo code
@@ -95,6 +103,7 @@ public class SpawnerObject : MonoBehaviour {
     		spawnees.RemoveAt(0);
     	}
 
+        SetButtonNames();
         SelectCorrectInstrument();
         SetAudioClips(cache[correctInstrument]);
 	}
@@ -131,8 +140,21 @@ public class SpawnerObject : MonoBehaviour {
 			return;
         }
 
+        SetButtonNames();
         SelectCorrectInstrument();
         SetAudioClips(cache[correctInstrument]);
+    }
+
+    private void SetButtonNames()
+    {
+        leftButton.text = GetNameWithoutClone(cache[0].name);
+        middleButton.text = GetNameWithoutClone(cache[1].name);
+        rightButton.text = GetNameWithoutClone(cache[2].name);
+    }
+
+    private string GetNameWithoutClone(string name)
+    {
+        return name.Split('(')[0];
     }
 
     private void SetAudioClips(GameObject obj)
