@@ -50,6 +50,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Music/Scenes/Instrument Guessing Game.unity
     guid: f89a9d37937928341932e0d34e6bce0e
+  - enabled: 1
+    path: Assets/Music/Scenes/Music Main Menu.unity
+    guid: 3ec8fe42da92b5045a31e24aef97f164
+  - enabled: 1
+    path: Assets/Music/Scenes/Finite Game.unity
+    guid: 51cea9ada5e662545ac8bbee9fab3e35
+  - enabled: 1
+    path: Assets/Music/Scenes/Infinite Game.unity
+    guid: 2c490ab96fafcad49859efe01951c0cb
+  - enabled: 1
+    path: Assets/Music/Scenes/Gallery.unity
+    guid: 938808a85c03c2143bd97e768ec3d58f
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aec41f2500f916943b2ae1206f0eb7a3,
       type: 2}
