@@ -27,7 +27,7 @@ public class GallerySpawner : MonoBehaviour
         SpawnInstrumentAt(--_CurrentIndex);
     }
 
-    private void SpawnInstrumentAt(int index)
+    public void SpawnInstrumentAt(int index)
     {
         Destroy(_CachedObject);
         _CachedObject = Instantiate(Spawnees[index], SpawnPosition.position, SpawnPosition.rotation) as GameObject;
