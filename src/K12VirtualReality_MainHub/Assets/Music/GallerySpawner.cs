@@ -7,9 +7,13 @@ public class GallerySpawner : MonoBehaviour
     public List<GameObject> Spawnees;
     public Transform SpawnPosition;
     public List<AudioSource> audioSources;
-    bool instrumentExists = false;
+    public List<TMPro.TextMeshProUGUI> instrumentDescriptions;
+    public TMPro.TextMeshProUGUI Description;
+
     private GameObject _CachedObject;
     private int _CurrentIndex;
+    private bool instrumentExists = false;
+    
 
 
     // Start is called before the first frame update
@@ -17,8 +21,11 @@ public class GallerySpawner : MonoBehaviour
     {
         _CurrentIndex = 0;
     }
+
+    // Time remaining before the audio plays again.
     private float timeRemaining = 10.0f;
-    void Update(){
+    void Update()
+    {
     	if (instrumentExists)
         {
             if (timeRemaining > 0.0f) timeRemaining -= Time.deltaTime;
@@ -52,6 +59,7 @@ public class GallerySpawner : MonoBehaviour
         Destroy(_CachedObject);
         _CachedObject = Instantiate(Spawnees[index], SpawnPosition.position, SpawnPosition.rotation) as GameObject;
         SetAudioClips(_CachedObject);
+        Description.text = instrumentDescriptions[index].text;
         instrumentExists = true;
     }
 
@@ -69,10 +77,5 @@ public class GallerySpawner : MonoBehaviour
         audioSources[2].Play();
         audioSources[3].Play();
     }
-/*
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }*/
+ 
 }
