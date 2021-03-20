@@ -5953,6 +5953,11 @@ MonoBehaviour:
   - {fileID: 7722581894275485085, guid: eb03c69cb3a830c43a977f6eb775cdb5, type: 3}
   - {fileID: 321206408392628029, guid: 045d9cfd630ca014f8bbed05546bba80, type: 3}
   SpawnPosition: {fileID: 1437367403}
+  audioSources:
+  - {fileID: 1048850748}
+  - {fileID: 1669330643}
+  - {fileID: 872762335}
+  - {fileID: 190953367}
 --- !u!4 &2083246463
 Transform:
   m_ObjectHideFlags: 0
