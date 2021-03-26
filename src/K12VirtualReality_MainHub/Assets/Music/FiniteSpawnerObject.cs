@@ -4,20 +4,26 @@ using UnityEngine;
 using System.Linq;
 
 
-public class SpawnerObject : MonoBehaviour {
+public class FiniteSpawnerObject : MonoBehaviour {
 
 	// Get spawnees and positions dynamically from Unity
     public List<GameObject> spawnees;
     public List<Transform> spawnPositions;
     public GameObject[] cache;
-    public TMPro.TextMeshProUGUI scoreboardText;
     public List<AudioSource> audioSources;
 
     public TMPro.TextMeshProUGUI leftButton;
     public TMPro.TextMeshProUGUI middleButton;
     public TMPro.TextMeshProUGUI rightButton;
 
-    private int score;
+    public TMPro.TextMeshProUGUI correctScoreText;
+    public TMPro.TextMeshProUGUI incorrectScoreText;
+
+    public TMPro.TextMeshProUGUI currentRoundText;
+
+    private int correctScore;
+    private int incorrectScore;
+    private int currentRound;
     private int correctInstrument;
 
     // Array to be populated with unaltered instrument list as copy
@@ -26,16 +32,18 @@ public class SpawnerObject : MonoBehaviour {
 	// Constant int to represent the three spawn positions on stage to prevent hardcoding numbers
 	const int numSpawnPositions = 3;
 
-
 	// Use this for initialization
 	void Start() {
 
+        correctScore = 0;
+        incorrectScore = 0;
+        currentRound = 0;
 		// Make an array copy of spawnees list
 		spawneesCopy = spawnees.ToArray();
 
         cache = new GameObject[3];
-        score = 0;
-        scoreboardText.text = $"Score: {score}";
+
+        ShuffleInstruments();
     }
 
     // Time remaining before the audio plays again.
@@ -67,8 +75,15 @@ public class SpawnerObject : MonoBehaviour {
 
         if(value == correctInstrument)
         {
-            scoreboardText.text = $"Score: {++score}";
+            correctScore++;
+            correctScoreText.text = correctScore.ToString();
         }
+        else
+        {
+            incorrectScore++;
+            incorrectScoreText.text = incorrectScore.ToString();
+        }
+
 
         foreach(var aus in audioSources)
         {
@@ -82,67 +97,19 @@ public class SpawnerObject : MonoBehaviour {
         rightButton.text = "Select";
     }
 
-	// Jacob Pseudo code
-	public void spawnRandomInfinite() {
+    public void spawnRandomFinite() {
+        if (spawnees.Count == 0) return; // TODO: Handle the exiting game scenario here!
 
-		// In number of instruments remaining is lass than three 
-		if (spawnees.Count < numSpawnPositions) {
-			spawnees = new List<GameObject>(spawneesCopy);
-		}
-
-        // Shuffle the instruments.
-        ShuffleInstruments();
-
-		// Use numSpawnPositions variable as limit to spawn in three instruments
-		for (int i = 0; i < numSpawnPositions; i++) {
-
-		    // Spawn instrument and remove from spawnees list
-            GameObject g = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
-            cache[i] = g;
-
+	   	for (int i = 0; i < numSpawnPositions; i++) {
+    		cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
     		spawnees.RemoveAt(0);
     	}
 
         SetButtonNames();
         SelectCorrectInstrument();
         SetAudioClips(cache[correctInstrument]);
-	}
-
-
-    public void spawnRandomFinite() {
-
-        // Shuffle the instruments.
-        ShuffleInstruments();
-
-
-    	// If three or less instruments remain, use spawnees.Count variable as limit to spawn in remaining instruments
-    	if (spawnees.Count <= numSpawnPositions) {
-    		for (int i = 0; i < spawnees.Count; i++) {
-
-    			// Spawn instrument and remove from spawnees list
-    			cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
-    			spawnees.RemoveAt(0);
-    		}
-    	}
-		
-		// If greater than three instruments remain, use numSpawnPositions variable as limit to spawn in three instruments
-    	else if (spawnees.Count > numSpawnPositions) {
-	   		for (int i = 0; i < numSpawnPositions; i++) {
-
-	   			// Spawn instrument and remove from spawnees list
-    			cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
-    			spawnees.RemoveAt(0);
-    		}
-	    }
-
-	    // If list is empty, return
-		else {
-			return;
-        }
-
-        SetButtonNames();
-        SelectCorrectInstrument();
-        SetAudioClips(cache[correctInstrument]);
+        currentRound++;
+        currentRoundText.text = $"{currentRound.ToString()}/10";
     }
 
     private void SetButtonNames()

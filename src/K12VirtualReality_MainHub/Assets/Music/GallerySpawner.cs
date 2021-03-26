@@ -24,23 +24,13 @@ public class GallerySpawner : MonoBehaviour
 
     // Time remaining before the audio plays again.
     private float timeRemaining = 10.0f;
-    void Update()
+    public void PlaySound()
     {
-    	if (instrumentExists)
-        {
-            if (timeRemaining > 0.0f) timeRemaining -= Time.deltaTime;
-            else
-            {
-                timeRemaining = 10.0f;
                 audioSources[0].Play();
                 audioSources[1].Play();
                 audioSources[2].Play();
                 audioSources[3].Play();
-            }
-        }
     }
-
-
 
     public void Next()
     {
@@ -71,11 +61,6 @@ public class GallerySpawner : MonoBehaviour
         {
             auso.clip = a.clip;
         }
-
-        audioSources[0].Play();
-        audioSources[1].Play();
-        audioSources[2].Play();
-        audioSources[3].Play();
     }
  
 }
