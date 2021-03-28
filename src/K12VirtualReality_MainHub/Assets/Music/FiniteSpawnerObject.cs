@@ -26,6 +26,8 @@ public class FiniteSpawnerObject : MonoBehaviour {
     private int currentRound;
     private int correctInstrument;
 
+    public Animator animator;
+
     // Array to be populated with unaltered instrument list as copy
 	private GameObject[] spawneesCopy;
 
@@ -98,7 +100,10 @@ public class FiniteSpawnerObject : MonoBehaviour {
     }
 
     public void spawnRandomFinite() {
-        if (spawnees.Count == 0) return; // TODO: Handle the exiting game scenario here!
+        if (spawnees.Count == 0){
+        	animator.Play("FiniteGameEnd");
+        	return;
+        } // TODO: Handle the exiting game scenario here!
 
 	   	for (int i = 0; i < numSpawnPositions; i++) {
     		cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
@@ -147,6 +152,10 @@ public class FiniteSpawnerObject : MonoBehaviour {
     private void SelectCorrectInstrument()
     {
         correctInstrument = (int)Random.Range(0, 3);
+    }
+
+    public void PauseBeforeSpawn(int seconds){
+    	Invoke("spawnRandomFinite", seconds);
     }
 
 }
