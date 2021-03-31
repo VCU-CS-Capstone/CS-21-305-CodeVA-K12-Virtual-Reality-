@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+using UnityEngine.UI;
 
 public class InfiniteSpawnerObject : MonoBehaviour
 {
@@ -12,6 +12,12 @@ public class InfiniteSpawnerObject : MonoBehaviour
     public List<Transform> spawnPositions;
     public GameObject[] cache;
     public List<AudioSource> audioSources;
+    public GameObject CorrectAudio;
+    public GameObject IncorrectAudio;
+
+    public Button Left;
+    public Button Right;
+    public Button Middle;
 
     public TMPro.TextMeshProUGUI leftButton;
     public TMPro.TextMeshProUGUI middleButton;
@@ -60,37 +66,44 @@ public class InfiniteSpawnerObject : MonoBehaviour
         }
     }
 
-    public void Clear(int value)
+public void UpdateScore(int value)
     {
         Debug.Log(value);
-        for (int i = 0; i < cache.Length; i++)
-        {
-            Destroy(cache[i]);
-            cache[i] = null;
-        }
+        
+        ButtonControl("OFF");
 
-        if (value == correctInstrument)
+        if(value == correctInstrument)
         {
             correctScore++;
             correctScoreText.text = correctScore.ToString();
+            SetAudioClips(CorrectAudio);
         }
         else
         {
             incorrectScore++;
             incorrectScoreText.text = incorrectScore.ToString();
+            SetAudioClips(IncorrectAudio);
         }
+        correctInstrument = -1;
+    }
 
 
-        foreach (var aus in audioSources)
+    public void Clear() {
+    	foreach(var aus in audioSources)
         {
             aus.clip = null;
         }
 
+        for(int i = 0; i < cache.Length; i++)
+        {
+            Destroy(cache[i]);
+            cache[i] = null;
+        }
+
         correctInstrument = -1;
 
-        leftButton.text = "Select";
-        middleButton.text = "Select";
-        rightButton.text = "Select";
+
+    
     }
 
     public void spawnRandomInfinite()
@@ -104,6 +117,10 @@ public class InfiniteSpawnerObject : MonoBehaviour
 
         // Shuffle the instruments.
         ShuffleInstruments();
+
+
+        ButtonControl("ON");
+
 
         // Use numSpawnPositions variable as limit to spawn in three instruments
         for (int i = 0; i < numSpawnPositions; i++)
@@ -156,6 +173,28 @@ public class InfiniteSpawnerObject : MonoBehaviour
     private void SelectCorrectInstrument()
     {
         correctInstrument = (int)Random.Range(0, 3);
+    }
+
+    public void PauseBeforeSpawn(string method){
+    	if (method == "Clear"){
+    		Invoke("Clear", 2);
+    	}
+    	else if (method == "spawnRandomInfinite"){
+    		Invoke("spawnRandomInfinite", 2);
+    	}
+    }
+
+    private void ButtonControl(string command){
+    	if (command == "ON"){
+    		Left.interactable = true;
+        	Right.interactable = true;
+        	Middle.interactable = true;
+    	}
+    	else if (command == "OFF"){
+    		Left.interactable = false;
+        	Right.interactable = false;
+        	Middle.interactable = false;
+    	}
     }
 
 }
