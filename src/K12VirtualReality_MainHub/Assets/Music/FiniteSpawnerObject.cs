@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 
 public class FiniteSpawnerObject : MonoBehaviour {
@@ -11,6 +12,12 @@ public class FiniteSpawnerObject : MonoBehaviour {
     public List<Transform> spawnPositions;
     public GameObject[] cache;
     public List<AudioSource> audioSources;
+    public GameObject CorrectAudio;
+    public GameObject IncorrectAudio;
+
+    public Button Left;
+    public Button Right;
+    public Button Middle;
 
     public TMPro.TextMeshProUGUI leftButton;
     public TMPro.TextMeshProUGUI middleButton;
@@ -25,6 +32,8 @@ public class FiniteSpawnerObject : MonoBehaviour {
     private int incorrectScore;
     private int currentRound;
     private int correctInstrument;
+
+    public Animator animator;
 
     // Array to be populated with unaltered instrument list as copy
 	private GameObject[] spawneesCopy;
@@ -50,6 +59,7 @@ public class FiniteSpawnerObject : MonoBehaviour {
     private float timeRemaining = 10.0f;
     void Update()
     {
+
         if (correctInstrument != -1)
         {
             if (timeRemaining > 0.0f) timeRemaining -= Time.deltaTime;
@@ -64,46 +74,66 @@ public class FiniteSpawnerObject : MonoBehaviour {
         }
     }
     
-    public void Clear(int value)
+    public void UpdateScore(int value)
     {
         Debug.Log(value);
+        
+        ButtonControl("OFF");
+
+        if(value == correctInstrument)
+        {
+            correctScore++;
+            correctScoreText.text = correctScore.ToString();
+            SetAudioClips(CorrectAudio);
+        }
+        else
+        {
+            incorrectScore++;
+            incorrectScoreText.text = incorrectScore.ToString();
+            SetAudioClips(IncorrectAudio);
+        }
+        correctInstrument = -1;
+    }
+
+
+    public void Clear() {
+    	foreach(var aus in audioSources)
+        {
+            aus.clip = null;
+        }
+
         for(int i = 0; i < cache.Length; i++)
         {
             Destroy(cache[i]);
             cache[i] = null;
         }
 
-        if(value == correctInstrument)
-        {
-            correctScore++;
-            correctScoreText.text = correctScore.ToString();
-        }
-        else
-        {
-            incorrectScore++;
-            incorrectScoreText.text = incorrectScore.ToString();
-        }
-
-
-        foreach(var aus in audioSources)
-        {
-            aus.clip = null;
-        }
-
         correctInstrument = -1;
 
-        leftButton.text = "Select";
-        middleButton.text = "Select";
-        rightButton.text = "Select";
+        if (spawnees.Count == 0){
+        	animator.Play("FiniteGameEnd");
+        	return;
+        } // TODO: Handle the exiting game scenario here!
+
+
+    
     }
 
     public void spawnRandomFinite() {
-        if (spawnees.Count == 0) return; // TODO: Handle the exiting game scenario here!
+        
+        if (spawnees.Count == 0){
+        	ButtonControl("OFF");
+        	return;
+        } // TODO: Handle the exiting game scenario here!
+
+        ButtonControl("ON");
 
 	   	for (int i = 0; i < numSpawnPositions; i++) {
     		cache[i] = Instantiate(spawnees[0], spawnPositions[i].position, spawnPositions[i].rotation) as GameObject;
     		spawnees.RemoveAt(0);
     	}
+
+
 
         SetButtonNames();
         SelectCorrectInstrument();
@@ -147,6 +177,28 @@ public class FiniteSpawnerObject : MonoBehaviour {
     private void SelectCorrectInstrument()
     {
         correctInstrument = (int)Random.Range(0, 3);
+    }
+
+    public void PauseBeforeSpawn(string method){
+    	if (method == "Clear"){
+    		Invoke("Clear", 2);
+    	}
+    	else if (method == "spawnRandomFinite"){
+    		Invoke("spawnRandomFinite", 2);
+    	}
+    }
+
+    private void ButtonControl(string command){
+    	if (command == "ON"){
+    		Left.interactable = true;
+        	Right.interactable = true;
+        	Middle.interactable = true;
+    	}
+    	else if (command == "OFF"){
+    		Left.interactable = false;
+        	Right.interactable = false;
+        	Middle.interactable = false;
+    	}
     }
 
 }
