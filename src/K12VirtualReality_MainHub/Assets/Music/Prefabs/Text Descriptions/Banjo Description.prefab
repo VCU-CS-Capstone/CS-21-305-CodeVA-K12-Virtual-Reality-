@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1567939988483288718}
   - component: {fileID: 1567939988483288719}
   m_Layer: 5
-  m_Name: Conga Drum Description
+  m_Name: Banjo Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: " Instrument: Conga Drum\n Class: \n Origin: \n Fun Fact: ???"
+  m_text: "Banjo                                            Strings\n\n\n\n\n\n17th
+    Century C.E.                        Banjos are \n                                                    
+    popular in folk \n                                                     and bluegrass
+    \n                                                    music"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8e411353e80b8d54ba87729a2ab858a1, type: 2}
@@ -91,13 +94,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.4
-  m_fontSizeBase: 0.4
+  m_fontSize: 0.35
+  m_fontSizeBase: 0.35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

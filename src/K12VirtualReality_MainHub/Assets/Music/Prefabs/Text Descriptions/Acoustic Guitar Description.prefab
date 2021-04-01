@@ -64,8 +64,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Acoustic Guitar                             Strings\n\n\n\n\n\n13th Century                                
-    Guitars have \n                                                      six strings"
+  m_text: "Acoustic Guitar                             Strings\n\n\n\n\n\n13th Century
+    C.E.                        Guitars have \n                                                     
+    six strings"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 8e411353e80b8d54ba87729a2ab858a1, type: 2}
