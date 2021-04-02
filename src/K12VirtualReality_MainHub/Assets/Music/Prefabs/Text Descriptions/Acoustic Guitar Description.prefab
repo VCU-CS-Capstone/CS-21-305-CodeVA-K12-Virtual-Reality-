@@ -64,7 +64,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Acoustic Guitar                             Strings\n\n\n\n\n\n13th Century
+  m_text: "Acoustic Guitar                             Strings\n\n\n\n\n13th Century
     C.E.                        Guitars have \n                                                     
     six strings"
   m_isRightToLeft: 0

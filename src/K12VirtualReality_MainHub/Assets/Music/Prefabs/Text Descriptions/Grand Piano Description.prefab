@@ -64,8 +64,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Grand Piano                                 Percussion\n\n\n\n\n\n17th
-    Century C.E.                       The word piano is \n                                                  
+  m_text: "Grand Piano                                 Percussion\n\n\n\n\n17th Century
+    C.E.                       The word piano is \n                                                  
     short for the word\n                                                   pianoforte
     which \n                                               means soft and loud"
   m_isRightToLeft: 0
