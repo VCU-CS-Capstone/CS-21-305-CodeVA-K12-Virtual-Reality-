@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class objectFaceCamera : MonoBehaviour {
+public class ObjectFaceCamera : MonoBehaviour {
 
 	// Variable to indicate which camera all instruments will face
 	private Transform cameraToFace;

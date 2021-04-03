@@ -185,9 +185,9 @@ public class InfiniteSpawnerObject : MonoBehaviour
 
         // Set audio for instrument by locating instrument in hierarchy and assigning attached audio to each source
         AudioSource a = GameObject.Find(obj.name).GetComponent<AudioSource>();
-        foreach(var auso in audioSources)
+        foreach(var audioSource in audioSources)
         {
-            auso.clip = a.clip;
+            audioSource.clip = a.clip;
         }
 
         // Play each audio source
