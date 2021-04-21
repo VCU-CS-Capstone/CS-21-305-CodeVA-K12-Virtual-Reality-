@@ -5,6 +5,7 @@ K12VirtualReality_MainHub is an application containing a couple different experi
 Educational experiences included:
 - Main Menu - Menu area for student to get acclamated to Virtual Reality and select their experience.
 - Space - Shows the solar system with all the celestial bodies including their rotations, revolutions, and facts about each.
+- Music - Shows different musical instruments with the option to view the instruments up close or have an auditory quiz to learn how each instrument sounds.
 
 ---
 ## Main Menu:
