@@ -56,4 +56,23 @@ When you play the finished game, instruments spawn in three different locations 
 
 With the alignment of the AcousticGuitar_01 instrument and the creation and alignment of the parent Acoustic Guitar game object, we can change the direction that the Z axis points and determine our own "front" of the instrument. For instance, with the parent Acoustic Guitar game object selected, the Z axis should now point straight out back at the user, the logical "front" of the instrument.
 
-4. Now let's make the script that causes the instruments to face the camera, regardless of their spawn position.
+4. Now let's make the script that causes the instruments to face the camera, regardless of their spawn position. With the parent game object selected, add a new script component and name it objectFaceCamera. </br>
+
+Use the following script: </br>
+![objectFaceCamera_Script](Screenshots/Music/objectFaceCamera_Script.png "objectFaceCamera Script")
+
+When you enter game mode now, the "front" of the object should face the camera, regardless of its position in the scene. Be sure to test this before moving on. It's better to fix one instrument now than fix all the instruments later. 
+
+5. With the parent game object still selected, add an audio source component and make sure "Play On Awake" and "Loop" are both <b>UNCHECKED</b>. For now, this will serve as a placeholder, The audio file will be added at a later time.
+
+The Transform, objectFaceCamera script, and the Audio Source should be the only components attached to the parent game object.
+
+6. Select the child prefab, AcousticGuitar_01. Add a new script component and name it MusicInstrumentMovement. This script will be used to give each instrument the hovering effect seen in-game. </br>
+
+Use the following script: </br>
+![MusicInstrumentMovement_Script](Screenshots/Music/MusicInstrumentMovement_Script.png "MusicInstrumentMovement Script")
+
+The numeric values for amplitude and frequency have been preset in the script; however, they are public values so you may change them dynamically in Unity if you wish to experiment with other values. Drag the AcousticGuitar_01 prefab from the hierarchy to the Instrument box in the inspector for the script to indicate which object will be controlled by the script.
+
+The inspector for the script should look similar to the image below. </br>
+![MusicInstrumentMovement_Instrument_Object](Screenshots/Music/MusicInstrumentMovement_Instrument_Object.png "MusicInstrumentMovement Instrument Object")
