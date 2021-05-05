@@ -166,3 +166,158 @@
 - Anything last minute the team needs!
 ### Questions & Issues
 - N/A
+
+## 01/31/2021
+
+### What have you done?
+- Met as a group to plan out the music project
+- Met with Mr. Shank to finalize the project details
+- Searched for best instrument assets 
+- Collect music for each instrument that is available to use
+### What are you working on in the upcoming week?
+- Continue collecting music
+- Assist with the asset purchase/reimbursement
+- Form a list of instruments we will be able to use in our project based on assets available
+### Questions & Issues
+- N/A
+
+## 02/07/2021
+
+### What have you done?
+- Met with Mr. Shank to finalize the project idea
+- Searched and tested software that could be used to create melodies for the project
+- Began working with external software to create music for the quiz
+### What are you working on in the upcoming week?
+- Compile a list of instruments based on the 3D models
+- Create sound files appropriate for the quiz for each of the instruments included in the quiz
+### Questions & Issues
+- N/A
+
+## 02/14/2021
+
+### What have you done?
+- Met with Mr. Shank and filled him in on the project details
+- Completed .wav files made in noteflight
+- Branched and created PR to dev with quiz sounds
+### What are you working on in the upcoming week?
+- Work with the group to finish implementing quiz features
+- Finalize quiz logic in the code
+- Complete any other tasks needed
+### Questions & Issues
+- N/A
+
+## 02/21/2021
+
+### What have you done?
+- We did not meet with Mr. Shank this week due to a conflict that he had
+- Reviewed and tested updates made to the dev folder
+- Began looking into connecting the instruments to their sound files
+### What are you working on in the upcoming week?
+- Work with the team to create a type of struct or other solution for giving instruments multiple value types
+- Finalizing quiz details and logic needed
+### Questions & Issues
+- N/A
+
+## 02/28/2021
+
+### What have you done?
+- Met with the group to work out the quiz script logic
+- We did not meet with Mr. Shank this week
+- Began updating design documents with the new scenes and features of the program
+- Updated charts and UML with current information from the music scene
+### What are you working on in the upcoming week??
+- Continue assisting with quiz logic
+- Finish updating the design docs
+- Possibly start the instrument viewing scenes
+### Questions & Issues
+- N/A
+
+## 03/7/2021
+
+### What have you done?
+- Met with Mr. Shank and adjusted details about the project
+- Branched off with new changes from dev
+### What are you working on in the upcoming week??
+- Update the design documents to reflect project updates
+- Finalize audio clips with instruments
+### Questions & Issues
+- N/A
+
+## 03/14/2021
+
+### What have you done?
+- Met with Mr. Shank
+- Met as a group to make a final checklist for the project
+- Took the 452 Law Quiz
+- Polished off all remaining paperwork and charts with our updated details
+- Added some missing instrument sound files to the Assets folder and pulled to dev
+### What are you working on in the upcoming week??
+- Work with the group to finalize any issues remaining in the code
+- Get the remaining sound clips for the more harder to find instruments
+- Possibly begin the student developer walkthrough document
+### Questions & Issues
+- N/A
+
+## 03/21/2021
+
+### What have you done?
+- Met with Mr. Shank (Planned to cancel our meeting for this week)
+- Started the 'Virtual Poster' discussed in lecture for the expo
+### What are you working on in the upcoming week?
+- Get the rest of the instrument sounds (Will have to use a separate program to download them)
+- Work on the Virtual Poster and other documents needed for the expo
+- Work on anything else the group needs!
+### Questions & Issues
+- N/A
+
+## 03/28/2021
+
+### What have you done?
+- Met as a team to finalize project details and solve UI issues
+- Created the virtual poster board
+- Added details from our project to our virtual poster
+- Did not meet with Mr. Shank (reading day) or Dr. Budwell this week
+### What are you working on in the upcoming week?
+- Push instrument sounds
+- Update virtual poster with images from the project
+- Work on anything else the group needs!
+- Start documenting the code for the students to recreate
+### Questions & Issues
+- N/A
+
+## 04/5/2021
+
+### What have you done?
+- Met with Mr. Shank to show off final touches of the project
+- Collected remainder of sounds from Sibelius
+- Edited the virtual poster
+- Began organizing a presentation to record for the expo
+### What are you working on in the upcoming week?
+- Send out poster for approval
+- Create abstract and finish presentation
+- Help with documentation
+### Questions & Issues
+- N/A
+
+## 04/11/2021
+
+### What have you done?
+- Completed abstract
+- Completed poster
+- Worked on presentation
+### What are you working on in the upcoming week?
+- Recording the presentation
+- Sending finished files to Mr. Shank
+- Submitting files
+### Questions & Issues
+- N/A
+
+## 04/25/2021
+
+### What have you done?
+- Sound documentation
+- Sound PDF file
+### What are you working on in the upcoming week?
+- Finish documentation
+### Questions & Issues
+- N/A
