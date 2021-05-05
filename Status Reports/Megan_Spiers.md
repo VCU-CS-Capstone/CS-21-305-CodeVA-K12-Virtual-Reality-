@@ -1,6 +1,6 @@
 # Weekly status reports
 
-## Week one
+## Week One
 
 ### Tasks
 - Integrate cardboard into unity/unreal (whichever we decide on)
@@ -79,3 +79,113 @@
 - Sucessfully got unity to switch scenes and play fade in animation when a button on a UI is pressed
 ### Issues
 - Unity only plays the fade in animation and not the fade out animation so scene transtion is still more jarring than desired
+
+## Week Eight
+
+### Tasks
+- Update UI to respond to hover and be more user friendly
+- Research about UI's in Unity
+### Accomplishments
+- Fixed Animation Issue
+- Set up scene transition main menu screen and space scene
+### Issues
+- N/A
+
+## Week Nine
+
+### Tasks
+- Get a reticle / gaze timer working
+- Set up proper transitions to scenes
+### Accomplishments
+- Set up temporary transitions to between space scene and planet scenes
+- Made UI more responisve (buttons now change color when hovered over)
+- Changed all default cameras to XR cameras to work with VR
+- Researched how to implement reticles / gaze timer in unity for cardboard
+### Issues
+- Issue: Google Cardboard's heavily documented way of making a reticle is only available through prefabs for the outdated cardboard VR SDK. The new Google XR SDk has very little documentation of reticle implementation
+
+## Week Ten
+
+### Tasks
+- Get a gaze timer working if we want one
+- Documentation for everything thus far
+### Accomplishments
+- Added temporary transition to Pluto scene / button to return back to Space scene
+- Added GoogleVR assets to give us more freedom with prefabs
+- Noticed and corrected scene transition error from a simple image in front of camera fading to a cube around the camera fading so that transition is not jarring regardless of where user looks during transition
+- Angled all UI buttons by -20 degrees to give the illusion that they are always facing the camera to make clicking them easier
+- Added reticle to all scenes that responds on click to UI buttons in all scenes and planets in the Space scene
+### Issues
+- N/A
+
+## Week Eleven
+
+### Tasks
+- Finish documentation
+- Plan how to display facts on UI
+- Look into how music breaks/skips in space scene 
+### Accomplishments
+- Fixed VR error in main menu scene
+- Documentation for various things
+### Issues
+- N/A
+
+## Week Twelve
+
+### Tasks
+- more documentation
+- Fix audio issue
+- finish plan for UI facts display 
+- Anything else we need 
+### Accomplishments
+- Worked on documentation 
+- Move space scene buttons into a more functional setting below the user's view
+- Moved back buttons in scene to the left side 
+- Started planning how UI facts will be displayed 
+### Issues
+- N/A
+
+## Week Thirteen
+
+### Tasks
+- Finish documentation
+- Last minute bug squashing 
+### Accomplishments
+- Added documentation to students instructions
+- Fix audio issue by adding different music to space scenes
+- Finish adding UI panels that display facts around planets
+- Work on documentation for various things 
+### Issues
+- N/A
+
+
+# Spring Semester
+
+## Week One
+
+### Tasks
+- Get random objects to instantiate at designated location 
+- Start the purchasing process for the Unity Asset Store assets once we know which route to take
+### Accomplishments
+- Met with Mr. Shank and decided what project we're going to start next
+- Researched and located assets to use for stage environment / music instruments 
+- Researched how to instantiate a random gameobject (instrument) from a set of gameobjects (all the instruments) at a certain location
+### Issues
+- To have VCU buy the assets or reimburse us
+
+## Week Two
+
+### Tasks
+- Push all new assets to dev branch
+- Shank wants instruments to be removed from array after spawn; implement that logic and make sure total number of instruments is divisible by 3
+- Add some in game buttons for testing 
+- Look for / fix any possible issues and bugs in previous code
+### Accomplishments
+- Created script that spawns three random objects at designated locations from a script
+- Created a new script that destroys objects after a certain time limit (for testing)
+- Added Jacob's script to game objects
+- Purchased all assets 
+- Set up the auditorium environment for use
+- Create new prefabs of all instruments so they use spawn script, destroy script, movement script, are detectable, and always face the camera
+### Issues
+- N/A
