@@ -5,9 +5,63 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.2.0/Hello Cardboard/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
+  - enabled: 0
+    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.2.0/Hello Cardboard/Scenes/Scene1.unity
+    guid: 76609ce858685a34bae8f0de858fc140
+  - enabled: 1
+    path: Assets/Main Menu.unity
+    guid: 047f4a3708d4ee947bdc468433a5ac31
+  - enabled: 1
+    path: Assets/Space/Scenes/Space.unity
+    guid: 9ab13ca756eb03b4488356e152f7cce9
+  - enabled: 1
+    path: Assets/Space/Scenes/Earth.unity
+    guid: 649d5d4723efcf64d8b241488dce2449
+  - enabled: 1
+    path: Assets/Space/Scenes/Jupiter.unity
+    guid: 22c559ba59e397b4983c0a59a5703ab9
+  - enabled: 1
+    path: Assets/Space/Scenes/Mars.unity
+    guid: dc001388b32ee444bbab152ab910483a
+  - enabled: 1
+    path: Assets/Space/Scenes/Mercury.unity
+    guid: 955c2fd5ed428884e9bef908ed4086b1
+  - enabled: 1
+    path: Assets/Space/Scenes/Neptune.unity
+    guid: 3a229ad6666f29b45894d70b1ed482ce
+  - enabled: 1
+    path: Assets/Space/Scenes/Saturn.unity
+    guid: 456cd86dcebffb54b8433b987fa5e356
+  - enabled: 1
+    path: Assets/Space/Scenes/Sun.unity
+    guid: f7564354b5e33d048a40a5d039a5acb9
+  - enabled: 1
+    path: Assets/Space/Scenes/Uranus.unity
+    guid: 5a5de947009aae148b610185dab4a4a0
+  - enabled: 1
+    path: Assets/Space/Scenes/Venus.unity
+    guid: 39294145af8225445bad4661abc71638
+  - enabled: 1
+    path: Assets/Space/Scenes/Pluto.unity
+    guid: c8d86cd1633cc7c49b67e037747065bf
+  - enabled: 1
+    path: Assets/Music/Scenes/Instrument Guessing Game.unity
+    guid: f89a9d37937928341932e0d34e6bce0e
+  - enabled: 1
+    path: Assets/Music/Scenes/Music Main Menu.unity
+    guid: 3ec8fe42da92b5045a31e24aef97f164
+  - enabled: 1
+    path: Assets/Music/Scenes/Finite Game.unity
+    guid: 51cea9ada5e662545ac8bbee9fab3e35
+  - enabled: 1
+    path: Assets/Music/Scenes/Infinite Game.unity
+    guid: 2c490ab96fafcad49859efe01951c0cb
+  - enabled: 1
+    path: Assets/Music/Scenes/Gallery.unity
+    guid: 938808a85c03c2143bd97e768ec3d58f
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aec41f2500f916943b2ae1206f0eb7a3,
       type: 2}
